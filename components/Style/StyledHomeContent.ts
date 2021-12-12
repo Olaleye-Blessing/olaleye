@@ -1,27 +1,27 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    height: 100%;
-    min-height: 60vh;
-    max-height: 35rem;
-
-    z-index: 100;
+    min-height: 83vh;
     background-image: linear-gradient(0deg, var(--home-bg), var(--home-bg-sec));
-    padding: 8rem 1.2rem;
-    display: flex;
-    flex-flow: column wrap;
-
-    @media screen and (min-width: 481px) {
-        padding-left: calc(1.2rem + 4vw);
-        padding-right: calc(1.2rem + 4vw);
-    }
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 
     h1,
     p {
         max-width: 50rem;
     }
 
+    a {
+        margin-top: 4rem;
+        width: max-content;
+    }
+
     .header {
+        &__content {
+            display: flex;
+            flex-flow: column wrap;
+        }
+
         &__greeting,
         &__name {
             display: block;
@@ -34,13 +34,46 @@ export const StyledHeader = styled.header`
         &__name {
             font-size: 3.3em;
             line-height: 1.3;
-            margin-top: 1rem;
-            margin-bottom: 1.2rem;
+            margin-top: 0.1rem;
+            margin-bottom: 0.3rem;
         }
 
         &__intro {
             font-size: 1.6rem;
             color: var(--color-gray-800);
+        }
+
+        &__svg {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+    }
+
+    @media screen and (min-width: 769px) {
+        min-height: 100vh;
+        display: flex;
+        padding: 0;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .header {
+            &__content {
+                flex: 3;
+            }
+            &__svg {
+                flex: 2;
+                display: block;
+                width: 100%;
+                max-width: 40rem;
+            }
         }
     }
 `;
@@ -49,18 +82,33 @@ export const MainPage = styled.main`
     margin-top: 5rem;
 
     @media screen and (min-width: 481px) {
-        padding-left: calc(1.2rem + 4vw);
-        padding-right: calc(1.2rem + 4vw);
     }
 `;
 
 export const StyledSection = styled.section`
-    padding: 1rem 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     .section {
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            &-about {
+                max-width: 46rem;
+
+                button {
+                    margin-top: 2rem;
+                }
+            }
+
+            &-skills {
+            }
+        }
+
         &__header {
             &-main {
-                margin-bottom: 3rem;
+                margin-bottom: 5.4rem;
                 text-align: center;
 
                 &-head {
@@ -86,7 +134,26 @@ export const StyledSection = styled.section`
                 p {
                     font-size: 1.5rem;
                     color: var(--color-gray-600);
+                    max-width: 70rem;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
+            }
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        .section {
+            &__content {
+            }
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .section {
+            &__content {
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
             }
         }
     }
@@ -94,7 +161,6 @@ export const StyledSection = styled.section`
 
 export const StyledSubSection = styled.section`
     margin-bottom: 5rem;
-    /* background-color: red; */
 
     h3 {
         text-align: left;

@@ -12,7 +12,6 @@ export const StyledProject = styled.li<StyledProps>`
     box-shadow: var(--box-shadow-md);
     background-color: var(--color-black-200);
     width: 100%;
-    max-width: 52.5rem;
     max-width: 53rem;
     margin-left: auto;
     margin-right: auto;
@@ -113,7 +112,7 @@ export const StyledProject = styled.li<StyledProps>`
     }
 
     @media screen and (min-width: 769px) {
-        max-width: 80rem;
+        max-width: 85rem;
 
         &:nth-child(even) {
             article {

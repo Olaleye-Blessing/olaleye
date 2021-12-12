@@ -24,24 +24,26 @@ const Index: FC = () => {
     };
 
     return (
-        <StyledNav>
-            <div className="nav__logo">
-                <HomeLogo />
+        <StyledNav className="">
+            <div className="container nav__container">
+                <div className="nav__logo">
+                    <HomeLogo />
+                </div>
+                <ul className="nav__list" ref={listRef}>
+                    {Links.map(({ path, text }) => (
+                        <li key={path} className="nav__lists">
+                            <Link href={path}>
+                                <a className="nav__links">{text}</a>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+                <Toggle
+                    ref={hamburgerRef}
+                    onClick={toggleHamburger}
+                    rest={{ className: "nav__toggle" }}
+                />
             </div>
-            <ul className="nav__list" ref={listRef}>
-                {Links.map(({ path, text }) => (
-                    <li key={path} className="nav__lists">
-                        <Link href={path}>
-                            <a className="nav__links">{text}</a>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-            <Toggle
-                ref={hamburgerRef}
-                onClick={toggleHamburger}
-                rest={{ className: "nav__toggle" }}
-            />
         </StyledNav>
     );
 };

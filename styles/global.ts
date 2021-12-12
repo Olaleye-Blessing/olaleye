@@ -92,7 +92,6 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         color: var(--color-red-100);
         transition: all 0.2s linear;
-        /* font-family: var(--font-primary); */
         font-family: var(--font-secondary);
 
         &:hover {
@@ -100,13 +99,16 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
-    button {
+    button, .btn {
         display: inline-block;
         background-color: transparent;
         border: none;
     }
 
     .btn {
+        color: var(--fg-main);
+        padding: 0.9rem 1.8rem 1rem;
+
         &__primary {
             background-color: var(--color-red-100);
             border: 0.1rem solid transparent;
@@ -157,6 +159,30 @@ const GlobalStyle = createGlobalStyle`
         padding: 0.6rem 1rem 0.8rem;
         border-radius: var(--border-rad-sm);
         font-size: 1rem;
+    }
+
+    .container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        width: 100%;
+        max-width: 140rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 480px) {
+            padding-right: calc(2rem + 3vw);
+            padding-left: calc(2rem + 3vw);
+        }
+
+        @media screen and (min-width: 769px) {
+            padding-right: calc(2.5rem + 5vw);
+            padding-left: calc(2.5rem + 5vw);
+        }
+
+        @media screen and (min-width: 1201px) {
+            padding-right: calc(10rem + 7vw);
+            padding-left: calc(10rem + 7vw);
+        }
     }
 `;
 

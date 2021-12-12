@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    padding: 1.4rem 1.2rem 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1.3rem;
     z-index: 120;
     box-shadow: var(--box-shadow-md);
     position: sticky;
     top: 0;
     left: 0;
+    right: 0;
     background-color: var(--bg-blurred);
 
     .nav {
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
         &__list {
             display: flex;
             flex-direction: column;
@@ -89,9 +93,6 @@ export const StyledNav = styled.nav`
     }
 
     @media screen and (min-width: 481px) {
-        padding-left: calc(1.2rem + 4vw);
-        padding-right: calc(1.2rem + 4vw);
-
         .nav {
             &__list {
                 margin-left: auto;
@@ -109,18 +110,13 @@ export const StyledNav = styled.nav`
                 margin-bottom: 0;
             }
 
-            /* &__links {
-                font-size: 1.8rem;
-            } */
-
             &__toggle {
                 display: none;
             }
         }
     }
 
-    @media screen and (min-width: "769px") {
-        /* padding-left: calc(13rem + 3vw);
-        padding-right: calc(13rem + 3vw); */
+    @media screen and (min-width: 769px) {
+        position: fixed;
     }
 `;
