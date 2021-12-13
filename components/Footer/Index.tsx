@@ -1,7 +1,53 @@
 import { FC } from "react";
+import { HomeLogo } from "./../../components";
+import { AiOutlineTwitter, AiFillGithub } from "react-icons/ai";
+import { CgMail } from "react-icons/cg";
+import { FaLinkedinIn } from "react-icons/fa";
+import { StyledFooter } from "./StyledFooter";
 
 const Index: FC = () => {
-    return <footer>footer</footer>;
+    let socials = [
+        { href: "https://github.com/Olaleye-Blessing", Icon: AiOutlineTwitter },
+        { href: "https://github.com/Olaleye-Blessing", Icon: AiFillGithub },
+        {
+            href: "https://www.linkedin.com/in/blessing-olaleye-139a22204/",
+            Icon: FaLinkedinIn,
+        },
+    ];
+
+    return (
+        <StyledFooter>
+            <div className="container">
+                <section>
+                    <HomeLogo />
+                    <p>Thanks for checking my portfolio.</p>
+                    <p>I&apos;m currently open to work.</p>
+                </section>
+                <section>
+                    <header>
+                        <h5>Contact Me</h5>
+                    </header>
+                    <ul className="footer__socials">
+                        {socials.map(({ Icon, href }, i) => (
+                            <li key={i}>
+                                <a href={href}>
+                                    <Icon />
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                    <p className="footer__contact-gmail">
+                        <a href="mailto:olayinkablexxy@gmail.com">
+                            <figure>
+                                <CgMail />
+                            </figure>
+                            <span>olayinkablexxy@gmail.com</span>
+                        </a>
+                    </p>
+                </section>
+            </div>
+        </StyledFooter>
+    );
 };
 
 export default Index;
