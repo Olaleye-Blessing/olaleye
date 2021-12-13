@@ -7,7 +7,7 @@ import { StyledFooter } from "./StyledFooter";
 
 const Index: FC = () => {
     let socials = [
-        { href: "https://github.com/Olaleye-Blessing", Icon: AiOutlineTwitter },
+        { href: "https://twitter.com/OlaleyeBlessin", Icon: AiOutlineTwitter },
         { href: "https://github.com/Olaleye-Blessing", Icon: AiFillGithub },
         {
             href: "https://www.linkedin.com/in/blessing-olaleye-139a22204/",

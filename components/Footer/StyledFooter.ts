@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
     background-color: var(--color-black-200);
-    background-color: var(--color-black-100);
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    background-image: url("/static/images/footer.svg");
+    background-repeat: no-repeat;
+    background-position: top -2rem center;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     margin-top: 3rem;
 
     .container {
@@ -29,10 +32,11 @@ export const StyledFooter = styled.footer`
     }
 
     a {
-        color: var(--color-gray-600);
+        opacity: 0.8;
 
         &:hover {
             color: var(--color-red-100);
+            opacity: 1;
         }
     }
 
@@ -62,5 +66,10 @@ export const StyledFooter = styled.footer`
                 }
             }
         }
+    }
+
+    @media screen and (min-width: 588px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 `;
