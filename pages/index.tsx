@@ -107,6 +107,18 @@ const Home: NextPage = () => {
                                 <Project key={i} {...project} />
                             ))}
                         </ul>
+                        <p className="section__project-others">
+                            Check out my other{" "}
+                            <a
+                                href="https://portfolio-git-master-olaleye-blessing.vercel.app/projects.html"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                cool projects
+                            </a>{" "}
+                            I built when I started learning about web
+                            development
+                        </p>
                     </StyledSection>
                 </div>
             </MainPage>

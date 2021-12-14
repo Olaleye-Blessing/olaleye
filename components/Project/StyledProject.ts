@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { Project } from "../../interface";
 
-type StyledProps = Pick<Project, "image">;
+type StyledProps = Pick<Project, "src">;
 
 const projectBg = (src: string) => {
-    return `/static/images/projects/${src}`;
+    return `/static/images/projects/${src}.webp`;
 };
 
 export const StyledProject = styled.li<StyledProps>`
-    margin-bottom: 4rem;
+    margin-bottom: 15rem;
     box-shadow: var(--box-shadow-md);
     background-color: var(--color-black-200);
     width: 100%;
@@ -17,6 +17,10 @@ export const StyledProject = styled.li<StyledProps>`
     margin-right: auto;
     border-radius: var(--border-rad-md);
     overflow: hidden;
+
+    &:last-child {
+        margin-bottom: 5rem;
+    }
 
     article {
         display: flex;
@@ -84,7 +88,7 @@ export const StyledProject = styled.li<StyledProps>`
         }
 
         &__img {
-            background-image: url(${({ image }) => projectBg(image)});
+            background-image: url(${({ src }) => projectBg(src)});
             height: 100%;
             background-position: center;
             background-size: cover;

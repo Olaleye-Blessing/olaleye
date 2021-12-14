@@ -1,6 +1,5 @@
 export interface Project {
-    image: string;
-    video: any;
+    src: string;
     heading: string;
     paragraphs: string[];
     tech: string[];

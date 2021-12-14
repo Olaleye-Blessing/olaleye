@@ -140,6 +140,15 @@ export const StyledSection = styled.section`
                 }
             }
         }
+
+        &__project {
+            &-others {
+                /* background-color: #f555; */
+                max-width: 53rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     }
 
     @media screen and (min-width: 481px) {
@@ -154,6 +163,11 @@ export const StyledSection = styled.section`
             &__content {
                 grid-template-columns: 1fr 1fr;
                 gap: 2.5rem;
+            }
+            &__project {
+                &-others {
+                    max-width: 85rem;
+                }
             }
         }
     }

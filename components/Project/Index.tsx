@@ -5,15 +5,16 @@ import Link from "next/link";
 
 const Index: FC<Project> = ({
     heading,
-    image,
+    // image,
     paragraphs,
     tech,
-    video,
+    // video,
     live,
     source,
+    src,
 }) => {
     return (
-        <StyledProject image={image}>
+        <StyledProject src={src}>
             <article>
                 <section className="project__details">
                     <header>
@@ -45,11 +46,11 @@ const Index: FC<Project> = ({
                     <figure className="project__video">
                         <video playsInline autoPlay muted loop>
                             <source
-                                src="/static/videos/projects/muvus.mp4"
+                                src={`/static/videos/projects/${src}.mp4`}
                                 type="video/mp4"
                             />
                             <source
-                                src="/static/videos/projects/muvus.webm"
+                                src={`/static/videos/projects/${src}.webm`}
                                 type="video/webm"
                             />
                         </video>

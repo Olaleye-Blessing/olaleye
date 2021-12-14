@@ -2,8 +2,9 @@ import { Project } from "../interface";
 
 export const projects: Project[] = [
     {
-        image: "muvus.webp",
-        video: true,
+        // image: "muvus.webp",
+        // video: "muvus",
+        src: "muvus",
         heading:
             "MUVUS - All about movies, tv series, people and community groups.",
         paragraphs: [
@@ -11,21 +12,38 @@ export const projects: Project[] = [
 
             "Users can also search for a particular media.",
         ],
-        tech: ["nextjs", "scss", "tailwindcss", "firebase"],
+        tech: ["nextjs", "scss", "tailwindcss", "firebase", "API"],
         source: "https://github.com/Olaleye-Blessing/muvus",
         live: "https://muvus.herokuapp.com/",
     },
 
-    // {
-    //     image: "muvus.webp",
-    //     video: true,
-    //     heading:
-    //         "MUVUS - All about movies, tv series, people and community groups.",
-    //     paragraphs: [
-    //         "Muvus is a media project that lists some series of movies, tv series and people. All media have a set of community(chat forum) that could be created by anyone.",
-    //     ],
-    //     tech: ["nextjs", "scss", "tailwindcss", "firebase"],
-    //     source: "https://github.com/Olaleye-Blessing/muvus",
-    //     live: "https://muvus.herokuapp.com/",
-    // },
+    {
+        // image: "covid.webp",
+        // video: "covid",
+        src: "covid",
+        heading:
+            "NCOV - Covid details for countries, continents and the world in general.",
+        paragraphs: [
+            "nCov gives short covid information of countries, continents and the world in general. It is a 5-page project in which one of the pages compare data",
+            "Users can also save any compared data",
+        ],
+        tech: ["nextjs", "scss", "tailwindcss", "API"],
+        source: "https://github.com/Olaleye-Blessing/covidtracker",
+        live: "https://covidtracker-umber.vercel.app/",
+    },
+
+    {
+        // image: "crypto.webp",
+        // video: "crypto",
+        src: "crypto",
+        heading:
+            "CRYPTUS - Home of crypturrencies, nfts, exchanges and crypto news",
+        paragraphs: [
+            "Cryptus provides basic information about popular coins in the world, latest crypto news, popular exchanges website and NFTS.",
+            "Users can filter out coins and check coin's history in form of a simple graph.",
+        ],
+        tech: ["nextjs", "typescript", "scss", "tailwindcss", "API"],
+        source: "https://github.com/Olaleye-Blessing/cryptus",
+        live: "https://cryptus-nine.vercel.app/",
+    },
 ];
