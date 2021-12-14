@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    min-height: 83vh;
+    min-height: 75vh;
     background-image: linear-gradient(0deg, var(--home-bg), var(--home-bg-sec));
     padding-top: 8rem;
     padding-bottom: 8rem;
+    display: flex;
+    align-items: center;
 
     h1,
     p {
