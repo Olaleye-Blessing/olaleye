@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             </StyledHeader>
             <MainPage>
                 <div className="container">
-                    <StyledSection>
+                    <StyledSection id="aboutme">
                         <header className="section__header-main">
                             <h2 className="section__header-main-head">
                                 About Me
@@ -91,7 +91,7 @@ const Home: NextPage = () => {
                         </div>
                     </StyledSection>
 
-                    <StyledSection>
+                    <StyledSection id="projects">
                         <header className="section__header-main">
                             <h2 className="section__header-main-head">
                                 PROJECTS

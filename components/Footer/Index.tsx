@@ -23,7 +23,7 @@ const Index: FC = () => {
                     <p>Thanks for checking my portfolio.</p>
                     <p>I&apos;m currently open to work.</p>
                 </section>
-                <section>
+                <section id="contact">
                     <header>
                         <h5>Contact Me</h5>
                     </header>

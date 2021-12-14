@@ -88,6 +88,7 @@ export const MainPage = styled.main`
 export const StyledSection = styled.section`
     padding-top: 2rem;
     padding-bottom: 2rem;
+    scroll-margin-top: 8rem;
 
     .section {
         &__content {
