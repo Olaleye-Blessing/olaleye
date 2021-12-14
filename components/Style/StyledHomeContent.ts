@@ -32,7 +32,8 @@ export const StyledHeader = styled.header`
         }
 
         &__name {
-            font-size: 3.3em;
+            font-size: calc(3rem + 4vw);
+            font-size: clamp(2rem, 12vw, 9rem);
             line-height: 1.3;
             margin-top: 0.1rem;
             margin-bottom: 0.3rem;

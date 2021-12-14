@@ -14,7 +14,7 @@ const Reset = createGlobalStyle`
     figure, figcaption, footer, header, hgroup, 
     menu, nav, output, ruby, section, summary,
     time, mark, audio, video {
-        font-size: 100%;
+        /* font-size: 100%; */
         /* font: inherit; */
         vertical-align: baseline;
     }
