@@ -8,6 +8,14 @@ const Index: FC = () => {
     let hamburgerRef = createRef<HTMLButtonElement>();
     let listRef = useRef<HTMLUListElement | null>(null);
 
+    const closeHamburger = () => {
+        let btn = hamburgerRef.current!;
+        let list = listRef.current!;
+
+        btn.classList.remove("active");
+        list.classList.remove("active");
+    };
+
     const toggleHamburger = () => {
         let btn = hamburgerRef.current!;
         let list = listRef.current!;
@@ -15,8 +23,7 @@ const Index: FC = () => {
         let open = btn.classList.contains("active");
 
         if (open) {
-            btn.classList.remove("active");
-            list.classList.remove("active");
+            closeHamburger();
         } else {
             btn.classList.add("active");
             list.classList.add("active");
@@ -33,7 +40,12 @@ const Index: FC = () => {
                     {Links.map(({ path, text }) => (
                         <li key={path} className="nav__lists">
                             <Link href={path}>
-                                <a className="nav__links">{text}</a>
+                                <a
+                                    className="nav__links"
+                                    onClick={closeHamburger}
+                                >
+                                    {text}
+                                </a>
                             </Link>
                         </li>
                     ))}
