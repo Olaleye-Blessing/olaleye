@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Button, Project } from "../components";
+import { Project } from "../components";
 import {
     MainPage,
     StyledHeader,
@@ -12,6 +12,7 @@ import {
 import { projects } from "../utils/projects";
 import { technologies } from "../utils/technologies";
 import headerBg from "./../public/static/images/header.svg";
+import Fade from "react-reveal/Fade";
 
 const Home: NextPage = () => {
     return (
@@ -68,67 +69,75 @@ const Home: NextPage = () => {
             <MainPage>
                 <div className="container">
                     <StyledSection id="aboutme">
-                        <header className="section__header-main">
-                            <h2 className="section__header-main-head">
-                                About Me
-                            </h2>
-                            <p>
-                                You will find a little intro about me and the
-                                skills and technologies I use daily.
-                            </p>
-                        </header>
+                        <Fade top>
+                            <header className="section__header-main">
+                                <h2 className="section__header-main-head">
+                                    About Me
+                                </h2>
+                                <p>
+                                    You will find a little intro about me and
+                                    the skills and technologies I use daily.
+                                </p>
+                            </header>
+                        </Fade>
                         <div className="section__content">
-                            <StyledSubSection className="section__content-about">
-                                <header>
-                                    <h3>Want to know me?</h3>
-                                </header>
-                                <p>
-                                    I&apos;m a{" "}
-                                    <strong>Frontend Developer</strong> whose
-                                    whole interest is building of interactive,
-                                    accessible and responsive websites. My
-                                    project section contains some beautiful
-                                    website I&apos;ve built.
-                                </p>
-                                <p>
-                                    I&apos;m currently opened to Job
-                                    opportunities where I can contribute to your
-                                    business and make your users happy. Contact
-                                    me if you&apos;re interested in having a
-                                    taste of my skills
-                                </p>
-                                <Link href="/#contact">
-                                    <a className="btn btn__primary">
-                                        Contact Me
-                                    </a>
-                                </Link>
-                            </StyledSubSection>
-                            <StyledSubSection className="section__content-skills">
-                                <header>
-                                    <h3>Skills and Technologies</h3>
-                                </header>
-                                <ul className="technologies">
-                                    {technologies.map((tech, i) => (
-                                        <li key={i} className="tech">
-                                            {tech}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </StyledSubSection>
+                            <Fade left>
+                                <StyledSubSection className="section__content-about">
+                                    <header>
+                                        <h3>Want to know me?</h3>
+                                    </header>
+                                    <p>
+                                        I&apos;m a{" "}
+                                        <strong>Frontend Developer</strong>{" "}
+                                        whose whole interest is building of
+                                        interactive, accessible and responsive
+                                        websites. My project section contains
+                                        some beautiful website I&apos;ve built.
+                                    </p>
+                                    <p>
+                                        I&apos;m currently opened to Job
+                                        opportunities where I can contribute to
+                                        your business and make your users happy.
+                                        Contact me if you&apos;re interested in
+                                        having a taste of my skills
+                                    </p>
+                                    <Link href="/#contact">
+                                        <a className="btn btn__primary">
+                                            Contact Me
+                                        </a>
+                                    </Link>
+                                </StyledSubSection>
+                            </Fade>
+                            <Fade right>
+                                <StyledSubSection className="section__content-skills">
+                                    <header>
+                                        <h3>Skills and Technologies</h3>
+                                    </header>
+                                    <ul className="technologies">
+                                        {technologies.map((tech, i) => (
+                                            <li key={i} className="tech">
+                                                {tech}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </StyledSubSection>
+                            </Fade>
                         </div>
                     </StyledSection>
 
                     <StyledSection id="projects">
-                        <header className="section__header-main">
-                            <h2 className="section__header-main-head">
-                                PROJECTS
-                            </h2>
-                            <p>
-                                These are some of the projects I built to
-                                practice and get better in the technologies
-                                mentioned above.
-                            </p>
-                        </header>
+                        <Fade top>
+                            <header className="section__header-main">
+                                <h2 className="section__header-main-head">
+                                    PROJECTS
+                                </h2>
+                                <p>
+                                    These are some of the projects I built to
+                                    practice and get better in the technologies
+                                    mentioned above.
+                                </p>
+                            </header>
+                        </Fade>
                         <ul>
                             {projects.map((project, i) => (
                                 <Project key={i} {...project} />

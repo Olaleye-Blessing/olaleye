@@ -2,8 +2,6 @@ import { Project } from "../interface";
 
 export const projects: Project[] = [
     {
-        // image: "muvus.webp",
-        // video: "muvus",
         src: "muvus",
         heading:
             "MUVUS - All about movies, tv series, people and community groups.",
@@ -18,8 +16,6 @@ export const projects: Project[] = [
     },
 
     {
-        // image: "covid.webp",
-        // video: "covid",
         src: "covid",
         heading:
             "NCOV - Covid details for countries, continents and the world in general.",
@@ -33,8 +29,6 @@ export const projects: Project[] = [
     },
 
     {
-        // image: "crypto.webp",
-        // video: "crypto",
         src: "crypto",
         heading:
             "CRYPTUS - Home of crypturrencies, nfts, exchanges and crypto news",
