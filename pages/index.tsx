@@ -56,7 +56,7 @@ const Home: NextPage = () => {
                             a passionate frontend developer focused on creating
                             interactive, accessible and responsive websites.
                         </p>
-                        <Link href="">
+                        <Link href="/#projects">
                             <a className="btn__primary btn">See My Work</a>
                         </Link>
                     </div>
@@ -97,10 +97,11 @@ const Home: NextPage = () => {
                                     me if you&apos;re interested in having a
                                     taste of my skills
                                 </p>
-                                <Button
-                                    text="Contact Me"
-                                    rest={{ className: "btn" }}
-                                />
+                                <Link href="/#contact">
+                                    <a className="btn btn__primary">
+                                        Contact Me
+                                    </a>
+                                </Link>
                             </StyledSubSection>
                             <StyledSubSection className="section__content-skills">
                                 <header>
