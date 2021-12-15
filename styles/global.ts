@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
 
         --color-red: #ff0a78;
         --color-red-100: #fa3879;
+        --color-red-200: #fa38798c;
 
         --home-bg: hsla(200deg, 100%, 85%, 0.1);
         --home-bg-sec: hsla(200deg, 100%, 85%, 0);
@@ -111,7 +112,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0.9rem 1.8rem 1rem;
 
         &__primary {
-            background-color: var(--color-red-100);
+            background-color: var(--color-red-200);
             border: 0.1rem solid transparent;
             border-radius: var(--border-rad-md);
         }

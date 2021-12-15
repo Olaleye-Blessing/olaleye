@@ -1,21 +1,11 @@
 import { FC } from "react";
 import { HomeLogo } from "./../../components";
-import { AiOutlineTwitter, AiFillGithub } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
-import { FaLinkedinIn } from "react-icons/fa";
 import { StyledFooter } from "./StyledFooter";
 import Fade from "react-reveal/Fade";
+import { socials } from "../../utils/socails";
 
 const Index: FC = () => {
-    let socials = [
-        { href: "https://twitter.com/OlaleyeBlessin", Icon: AiOutlineTwitter },
-        { href: "https://github.com/Olaleye-Blessing", Icon: AiFillGithub },
-        {
-            href: "https://www.linkedin.com/in/blessing-olaleye-139a22204/",
-            Icon: FaLinkedinIn,
-        },
-    ];
-
     return (
         <Fade bottom>
             <StyledFooter>
@@ -27,20 +17,23 @@ const Index: FC = () => {
                     </section>
                     <section id="contact">
                         <header>
-                            <h5>Contact Me</h5>
+                            <h4>Contact Me</h4>
                         </header>
                         <ul className="footer__socials">
-                            {socials.map(({ Icon, href }, i) => (
+                            {socials.map(({ Icon, href, label }, i) => (
                                 <li key={i}>
-                                    <a href={href}>
-                                        <Icon />
+                                    <a
+                                        href={href}
+                                        aria-label={`my ${label} profile`}
+                                    >
+                                        <Icon aria-hidden="true" />
                                     </a>
                                 </li>
                             ))}
                         </ul>
                         <p className="footer__contact-gmail">
                             <a href="mailto:olayinkablexxy@gmail.com">
-                                <figure>
+                                <figure aria-hidden="true">
                                     <CgMail />
                                 </figure>
                                 <span>olayinkablexxy@gmail.com</span>

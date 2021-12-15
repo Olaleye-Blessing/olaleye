@@ -13,6 +13,7 @@ const Index: FC = () => {
         let list = listRef.current!;
 
         btn.classList.remove("active");
+        btn.setAttribute("aria-expanded", "false");
         list.classList.remove("active");
     };
 
@@ -26,6 +27,7 @@ const Index: FC = () => {
             closeHamburger();
         } else {
             btn.classList.add("active");
+            btn.setAttribute("aria-expanded", "true");
             list.classList.add("active");
         }
     };
@@ -36,7 +38,17 @@ const Index: FC = () => {
                 <div className="nav__logo">
                     <HomeLogo />
                 </div>
-                <ul className="nav__list" ref={listRef}>
+                <Toggle
+                    ref={hamburgerRef}
+                    onClick={toggleHamburger}
+                    rest={{
+                        className: "nav__toggle",
+                        "aria-label": "toggle navbar links",
+                        "aria-controls": "menu",
+                        "aria-expanded": false,
+                    }}
+                />
+                <ul className="nav__list" ref={listRef} id="menu">
                     {Links.map(({ path, text }) => (
                         <li key={path} className="nav__lists">
                             <Link href={path}>
@@ -50,11 +62,6 @@ const Index: FC = () => {
                         </li>
                     ))}
                 </ul>
-                <Toggle
-                    ref={hamburgerRef}
-                    onClick={toggleHamburger}
-                    rest={{ className: "nav__toggle" }}
-                />
             </div>
         </StyledNav>
     );
