@@ -44,7 +44,7 @@ const Index: FC<Project> = ({
                             </Link>
                         </div>
                     </section>
-                    <div className="project__figures">
+                    <div className="project__figures" aria-hidden="true">
                         <figure className="project__img"></figure>
                         <figure className="project__video">
                             <video playsInline autoPlay muted loop>
