@@ -74,7 +74,7 @@ const Home: NextPage = () => {
                             </h2>
                             <p>
                                 You will find a little intro about me and the
-                                skills and technologies I use daily
+                                skills and technologies I use daily.
                             </p>
                         </header>
                         <div className="section__content">
@@ -84,11 +84,11 @@ const Home: NextPage = () => {
                                 </header>
                                 <p>
                                     I&apos;m a{" "}
-                                    <strong>Frontend Developer</strong> who has
-                                    whose whole insterest is building of
-                                    interactive, accessible and responsive
-                                    websites. My project section contains some
-                                    beautify website I&apos;ve built.
+                                    <strong>Frontend Developer</strong> whose
+                                    whole interest is building of interactive,
+                                    accessible and responsive websites. My
+                                    project section contains some beautiful
+                                    website I&apos;ve built.
                                 </p>
                                 <p>
                                     I&apos;m currently opened to Job
@@ -126,7 +126,7 @@ const Home: NextPage = () => {
                             <p>
                                 These are some of the projects I built to
                                 practice and get better in the technologies
-                                mentioned above
+                                mentioned above.
                             </p>
                         </header>
                         <ul>
