@@ -6,3 +6,4 @@ export { default as HomeLogo } from "./HomeLogo";
 export { default as Button } from "./Button/Index";
 export { default as Project } from "./Project/Index";
 export { default as Resume } from "./Resume";
+export { default as ProjectPreview } from "./Project/ProjectPreview";

@@ -95,7 +95,9 @@ const GlobalStyle = createGlobalStyle`
         color: var(--color-red-100);
         transition: all 0.2s linear;
         font-family: var(--font-secondary);
+    }
 
+    a, button {
         &:hover {
             opacity: 0.7;
         }
@@ -105,6 +107,7 @@ const GlobalStyle = createGlobalStyle`
         display: inline-block;
         background-color: transparent;
         border: none;
+        transition: all 0.2s linear;
     }
 
     .btn {

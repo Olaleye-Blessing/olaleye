@@ -57,14 +57,25 @@ export const StyledProject = styled.li<StyledProps>`
                 position: relative;
                 transition: all 0.3s linear;
                 background-color: transparent;
+                text-decoration: underline;
 
                 &:hover {
-                    text-decoration: underline;
+                    text-decoration: none;
                 }
 
                 &:first-child {
                     margin-right: 2rem;
                 }
+
+                &:nth-child(2) {
+                    margin-right: auto;
+                }
+            }
+
+            button {
+                padding: 0.7rem 1.8rem 0.7rem 1.8rem;
+                font-size: 1.4rem;
+                cursor: pointer;
             }
         }
 
@@ -72,19 +83,6 @@ export const StyledProject = styled.li<StyledProps>`
             width: 100%;
             height: 30rem;
             position: relative;
-
-            &:hover {
-                .project {
-                    &__img {
-                        opacity: 0;
-                    }
-
-                    &__video {
-                        height: 100%;
-                        opacity: 1;
-                    }
-                }
-            }
         }
 
         &__img {
@@ -95,7 +93,7 @@ export const StyledProject = styled.li<StyledProps>`
             transition: all 0.3s linear;
         }
 
-        &__video {
+        &__review {
             transition: all 0.3s linear;
             position: absolute;
             top: 0;
@@ -106,11 +104,9 @@ export const StyledProject = styled.li<StyledProps>`
             height: 0;
             opacity: 0;
 
-            video {
-                display: block;
-                width: 100%;
+            &.show {
                 height: 100%;
-                object-fit: cover;
+                opacity: 1;
             }
         }
     }

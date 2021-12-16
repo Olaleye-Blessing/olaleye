@@ -5,4 +5,5 @@ export interface Project {
     tech: string[];
     source: string;
     live: string;
+    youtubeUrl: string;
 }

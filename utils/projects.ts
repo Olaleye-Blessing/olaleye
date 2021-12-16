@@ -13,6 +13,7 @@ export const projects: Project[] = [
         tech: ["nextjs", "scss", "tailwindcss", "firebase", "API"],
         source: "https://github.com/Olaleye-Blessing/muvus",
         live: "https://muvus.herokuapp.com/",
+        youtubeUrl: "https://www.youtube.com/watch?v=aorIddDX8B8",
     },
 
     {
@@ -26,6 +27,7 @@ export const projects: Project[] = [
         tech: ["nextjs", "scss", "tailwindcss", "API"],
         source: "https://github.com/Olaleye-Blessing/covidtracker",
         live: "https://covidtracker-umber.vercel.app/",
+        youtubeUrl: "https://www.youtube.com/watch?v=K0kYdQSalbo",
     },
 
     {
@@ -39,5 +41,6 @@ export const projects: Project[] = [
         tech: ["nextjs", "typescript", "scss", "tailwindcss", "API"],
         source: "https://github.com/Olaleye-Blessing/cryptus",
         live: "https://cryptus-nine.vercel.app/",
+        youtubeUrl: "https://www.youtube.com/watch?v=Ec8DtBIMyfE",
     },
 ];

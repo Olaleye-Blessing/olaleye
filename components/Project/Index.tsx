@@ -1,7 +1,8 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Project } from "../../interface";
 import { StyledProject } from "./StyledProject";
 import Link from "next/link";
+import { Button, ProjectPreview } from "./../../components";
 
 const Index: FC<Project> = ({
     heading,
@@ -10,7 +11,10 @@ const Index: FC<Project> = ({
     live,
     source,
     src,
+    youtubeUrl,
 }) => {
+    const [showPreview, setShowPreview] = useState(false);
+
     return (
         <StyledProject src={src}>
             <article>
@@ -37,28 +41,20 @@ const Index: FC<Project> = ({
                         <Link href={source}>
                             <a className="btn__primary">Source</a>
                         </Link>
+                        <Button
+                            text="Preview"
+                            rest={{
+                                onClick: () => setShowPreview((prev) => !prev),
+                            }}
+                        />
                     </div>
                 </section>
                 <div className="project__figures" aria-hidden="true">
                     <figure className="project__img"></figure>
-                    <figure className="project__video">
-                        <video
-                            playsInline
-                            autoPlay
-                            muted
-                            loop
-                            poster={"/static/gifs/loading.gif"}
-                        >
-                            <source
-                                src={`/static/videos/projects/${src}.mp4`}
-                                type="video/mp4"
-                            />
-                            <source
-                                src={`/static/videos/projects/${src}.webm`}
-                                type="video/webm"
-                            />
-                        </video>
-                    </figure>
+                    <ProjectPreview
+                        show={showPreview}
+                        youtubeUrl={youtubeUrl}
+                    />
                 </div>
             </article>
         </StyledProject>
