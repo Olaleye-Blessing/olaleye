@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Project } from "../components";
+import { Project, Resume } from "../components";
 import {
     MainPage,
     StyledHeader,
@@ -157,6 +157,7 @@ const Home: NextPage = () => {
                         </p>
                     </StyledSection>
                 </div>
+                <Resume />
             </MainPage>
         </>
     );
