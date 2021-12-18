@@ -19,9 +19,19 @@ const Header: FC = () => {
                         a passionate frontend developer focused on creating
                         interactive, accessible and responsive websites.
                     </p>
-                    <Link href="/#projects">
-                        <a className="btn__primary btn">See My Work</a>
-                    </Link>
+                    <div className="header__links">
+                        <Link href="/#projects">
+                            <a className="btn__primary btn">See My Work</a>
+                        </Link>
+                        <a
+                            className="btn__primary btn"
+                            href="https://resume.io/r/MtzvmHqJI"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            View Resume
+                        </a>
+                    </div>
                 </div>
                 <div className="header__svg" aria-hidden="true">
                     <Image alt="" src={headerBg} layout="responsive" />

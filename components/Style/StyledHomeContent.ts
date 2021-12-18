@@ -14,7 +14,6 @@ export const StyledHeader = styled.header`
     }
 
     a {
-        margin-top: 4rem;
         width: max-content;
     }
 
@@ -48,6 +47,22 @@ export const StyledHeader = styled.header`
 
         &__svg {
             display: none;
+        }
+
+        &__links {
+            margin-top: 4rem;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: start;
+
+            a {
+                margin-bottom: 2rem;
+
+                &:first-child {
+                    margin-right: 2rem;
+                }
+            }
         }
     }
 
