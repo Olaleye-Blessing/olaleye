@@ -3,6 +3,7 @@ import { Project } from "../../interface";
 import { StyledProject } from "./StyledProject";
 import Link from "next/link";
 import { Button, ProjectPreview } from "./../../components";
+import Image from "next/image";
 
 const Index: FC<Project> = ({
     heading,
@@ -10,13 +11,14 @@ const Index: FC<Project> = ({
     tech,
     live,
     source,
-    src,
     youtubeUrl,
+    image,
+    name,
 }) => {
     const [showPreview, setShowPreview] = useState(false);
 
     return (
-        <StyledProject src={src}>
+        <StyledProject>
             <article>
                 <section className="project__details">
                     <header>
@@ -49,8 +51,14 @@ const Index: FC<Project> = ({
                         />
                     </div>
                 </section>
-                <div className="project__figures" aria-hidden="true">
-                    <figure className="project__img"></figure>
+                <div className="project__figures">
+                    <figure className="project__img">
+                        <Image
+                            src={image}
+                            alt={`${name}'s screenshot`}
+                            layout="responsive"
+                        />
+                    </figure>
                     <ProjectPreview
                         show={showPreview}
                         youtubeUrl={youtubeUrl}

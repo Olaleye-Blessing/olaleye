@@ -1,14 +1,8 @@
 import styled from "styled-components";
 import { Project } from "../../interface";
 
-type StyledProps = Pick<Project, "src">;
-
-const projectBg = (src: string) => {
-    return `/static/images/projects/${src}.webp`;
-};
-
-export const StyledProject = styled.li<StyledProps>`
-    margin-bottom: 15rem;
+export const StyledProject = styled.li`
+    margin-bottom: 8rem;
     box-shadow: var(--box-shadow-md);
     background-color: var(--color-black-200);
     width: 100%;
@@ -81,16 +75,10 @@ export const StyledProject = styled.li<StyledProps>`
 
         &__figures {
             width: 100%;
-            height: 30rem;
             position: relative;
         }
 
         &__img {
-            background-image: url(${({ src }) => projectBg(src)});
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            transition: all 0.3s linear;
         }
 
         &__review {
@@ -112,16 +100,14 @@ export const StyledProject = styled.li<StyledProps>`
     }
 
     @media screen and (min-width: 769px) {
-        max-width: 85rem;
+        margin-bottom: 0;
 
         &:nth-child(even) {
             article {
-                flex-direction: row-reverse;
             }
         }
 
         article {
-            flex-direction: row;
             align-items: stretch;
         }
 
@@ -135,9 +121,13 @@ export const StyledProject = styled.li<StyledProps>`
             &__figures {
                 height: auto;
                 flex: 5;
+
+                display: flex;
+                align-items: center;
             }
 
             &__img {
+                width: 100%;
             }
         }
     }

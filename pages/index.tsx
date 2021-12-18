@@ -2,14 +2,13 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Project, Resume } from "../components";
+import { Projects, Resume } from "../components";
 import {
     MainPage,
     StyledHeader,
     StyledSection,
     StyledSubSection,
 } from "../components/Style/StyledHomeContent";
-import { projects } from "../utils/projects";
 import { technologies } from "../utils/technologies";
 import headerBg from "./../public/static/images/header.svg";
 import Fade from "react-reveal/Fade";
@@ -138,11 +137,7 @@ const Home: NextPage = () => {
                                 </p>
                             </header>
                         </Fade>
-                        <ul>
-                            {projects.map((project, i) => (
-                                <Project key={i} {...project} />
-                            ))}
-                        </ul>
+                        <Projects />
                         <p className="section__project-others">
                             Check out my other{" "}
                             <a

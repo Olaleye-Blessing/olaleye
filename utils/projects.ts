@@ -1,8 +1,11 @@
 import { Project } from "../interface";
+import Muvus from "./../public/static/images/projects/muvus.webp";
+import Covid from "./../public/static/images/projects/covid.webp";
+import Crypto from "./../public/static/images/projects/crypto.webp";
 
 export const projects: Project[] = [
     {
-        src: "muvus",
+        name: "muvus",
         heading:
             "MUVUS - All about movies, tv series, people and community groups.",
         paragraphs: [
@@ -14,10 +17,11 @@ export const projects: Project[] = [
         source: "https://github.com/Olaleye-Blessing/muvus",
         live: "https://muvus.herokuapp.com/",
         youtubeUrl: "https://www.youtube.com/watch?v=aorIddDX8B8",
+        image: Muvus,
     },
 
     {
-        src: "covid",
+        name: "covid",
         heading:
             "NCOV - Covid details for countries, continents and the world in general.",
         paragraphs: [
@@ -28,10 +32,11 @@ export const projects: Project[] = [
         source: "https://github.com/Olaleye-Blessing/covidtracker",
         live: "https://covidtracker-umber.vercel.app/",
         youtubeUrl: "https://www.youtube.com/watch?v=K0kYdQSalbo",
+        image: Covid,
     },
 
     {
-        src: "crypto",
+        name: "crypto",
         heading:
             "CRYPTUS - Home of crypturrencies, nfts, exchanges and crypto news",
         paragraphs: [
@@ -42,5 +47,6 @@ export const projects: Project[] = [
         source: "https://github.com/Olaleye-Blessing/cryptus",
         live: "https://cryptus-nine.vercel.app/",
         youtubeUrl: "https://www.youtube.com/watch?v=Ec8DtBIMyfE",
+        image: Crypto,
     },
 ];
