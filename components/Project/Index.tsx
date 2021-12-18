@@ -37,12 +37,22 @@ const Index: FC<Project> = ({
                         ))}
                     </ul>
                     <div className="project__links">
-                        <Link href={live}>
-                            <a className="btn__primary">Live</a>
-                        </Link>
-                        <Link href={source}>
-                            <a className="btn__primary">Source</a>
-                        </Link>
+                        <a
+                            className="btn__primary"
+                            href={live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live
+                        </a>
+                        <a
+                            className="btn__primary"
+                            href={source}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Source
+                        </a>
                         <Button
                             text="Preview"
                             rest={{
