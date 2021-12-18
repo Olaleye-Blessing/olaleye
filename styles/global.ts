@@ -94,10 +94,10 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         color: var(--color-red-100);
         transition: all 0.2s linear;
-        font-family: var(--font-secondary);
     }
 
     a, button {
+        font-family: var(--font-secondary);
         &:hover {
             opacity: 0.7;
         }
