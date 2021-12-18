@@ -8,3 +8,8 @@ export { default as Projects } from "./Project/Projects";
 export { default as Project } from "./Project/Index";
 export { default as Resume } from "./Resume";
 export { default as ProjectPreview } from "./Project/ProjectPreview";
+export { default as Technologies } from "./Technologies";
+export { default as AboutMe } from "./AboutMe/Index";
+export { default as About } from "./AboutMe/About";
+export { default as AboutHeader } from "./AboutMe/AboutHeader";
+export { default as Header } from "./Header";
