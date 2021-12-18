@@ -39,6 +39,7 @@ export const StyledProject = styled.li`
         }
 
         &__links {
+            margin-top: 3rem;
             display: flex;
             align-items: center;
             justify-content: flex-start;
