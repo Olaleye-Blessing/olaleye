@@ -38,6 +38,12 @@ const Index: FC = () => {
                                 </figure>
                                 <span>olayinkablexxy@gmail.com</span>
                             </a>
+                            <a href="mailto:blessingolaleyejob@gmail.com">
+                                <figure aria-hidden="true">
+                                    <CgMail />
+                                </figure>
+                                <span>blessingolaleyejob@gmail.com</span>
+                            </a>
                         </p>
                     </section>
                 </div>
