@@ -58,7 +58,7 @@ export const projects: Project[] = [
             "FoodCheck lists out recipes for preparing your favourite dish.",
             "The main purpose of this project is to learn about unit testing.",
         ],
-        tech: ["reactjs", "styled-components", "API"],
+        tech: ["reactjs", "styled-components", "API", "Testing"],
         source: "https://github.com/Olaleye-Blessing/foodcheck",
         live: "https://foodcheck.vercel.app/",
         image: FoodCheck,
