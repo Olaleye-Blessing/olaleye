@@ -102,6 +102,7 @@ export const StyledProject = styled.li`
 
     @media screen and (min-width: 769px) {
         margin-bottom: 0;
+        height: 100%;
 
         &:nth-child(even) {
             article {
