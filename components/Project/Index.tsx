@@ -53,12 +53,15 @@ const Index: FC<Project> = ({
                         >
                             Source
                         </a>
-                        <Button
-                            text="Preview"
-                            rest={{
-                                onClick: () => setShowPreview((prev) => !prev),
-                            }}
-                        />
+                        {youtubeUrl && (
+                            <Button
+                                text="Preview"
+                                rest={{
+                                    onClick: () =>
+                                        setShowPreview((prev) => !prev),
+                                }}
+                            />
+                        )}
                     </div>
                 </section>
                 <div className="project__figures">
@@ -69,10 +72,12 @@ const Index: FC<Project> = ({
                             layout="responsive"
                         />
                     </figure>
-                    <ProjectPreview
-                        show={showPreview}
-                        youtubeUrl={youtubeUrl}
-                    />
+                    {youtubeUrl && (
+                        <ProjectPreview
+                            show={showPreview}
+                            youtubeUrl={youtubeUrl}
+                        />
+                    )}
                 </div>
             </article>
         </StyledProject>

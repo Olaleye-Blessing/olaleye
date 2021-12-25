@@ -2,6 +2,7 @@ import { Project } from "../interface";
 import Muvus from "./../public/static/images/projects/muvus.webp";
 import Covid from "./../public/static/images/projects/covid.webp";
 import Crypto from "./../public/static/images/projects/crypto.webp";
+import FoodCheck from "./../public/static/images/projects/foodcheck.webp";
 
 export const projects: Project[] = [
     {
@@ -48,5 +49,18 @@ export const projects: Project[] = [
         live: "https://cryptus-nine.vercel.app/",
         youtubeUrl: "https://www.youtube.com/watch?v=Ec8DtBIMyfE",
         image: Crypto,
+    },
+
+    {
+        name: "foodcheck",
+        heading: "FoodCheck - Get your recipe for your favourite dish",
+        paragraphs: [
+            "FoodCheck lists out recipes for preparing your favourite dish.",
+            "The main purpose of this project is to learn about unit testing.",
+        ],
+        tech: ["reactjs", "styled-components", "API"],
+        source: "https://github.com/Olaleye-Blessing/foodcheck",
+        live: "https://foodcheck.vercel.app/",
+        image: FoodCheck,
     },
 ];
