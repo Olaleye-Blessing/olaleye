@@ -24,7 +24,7 @@ const Header: FC = () => {
                             <a className="btn__primary btn">See My Work</a>
                         </Link>
                         <a
-                            className="btn__primary btn"
+                            className="btn__secondary btn"
                             href="https://resume.io/r/MtzvmHqJI"
                             target="_blank"
                             rel="noreferrer noopener"

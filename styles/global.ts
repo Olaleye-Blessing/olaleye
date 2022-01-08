@@ -114,10 +114,17 @@ const GlobalStyle = createGlobalStyle`
         color: var(--fg-main);
         padding: 0.9rem 1.8rem 1rem;
 
+        &__primary, &__secondary {
+            border-radius: var(--border-rad-md);
+        }
+
         &__primary {
             background-color: var(--color-red-200);
             border: 0.1rem solid transparent;
-            border-radius: var(--border-rad-md);
+        }
+
+        &__secondary {
+            border: 0.1rem solid var(--color-red-200);
         }
     }
 
@@ -163,7 +170,7 @@ const GlobalStyle = createGlobalStyle`
         margin-bottom: 2rem;
         padding: 0.6rem 1rem 0.8rem;
         border-radius: var(--border-rad-sm);
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .container {
