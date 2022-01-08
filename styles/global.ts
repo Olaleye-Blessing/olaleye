@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
         --box-shadow-md: var(--shadow), var(--shadow), var(--shadow), var(--shadow), var(--shadow-last);
 
         --font-primary: 'Poppins', sans-serif;
-        --font-secondary: 'Playfair Display', serif;
+        --font-secondary: 'Lato', sans-serif;
 
         --border-rad-sm: 0.7rem;
         --border-rad-md: 1rem;
@@ -137,7 +137,7 @@ const GlobalStyle = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-weight: 900;
+        font-weight: 700;
         letter-spacing: 0.1rem;
     }
 
