@@ -113,6 +113,7 @@ const GlobalStyle = createGlobalStyle`
     .btn {
         color: var(--fg-main);
         padding: 0.9rem 1.8rem 1rem;
+        text-decoration: none;
 
         &__primary, &__secondary {
             border-radius: var(--border-rad-md);
@@ -125,6 +126,8 @@ const GlobalStyle = createGlobalStyle`
 
         &__secondary {
             border: 0.1rem solid var(--color-red-200);
+            color: var(--fg-main);
+
         }
     }
 

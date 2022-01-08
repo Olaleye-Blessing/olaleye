@@ -1,7 +1,6 @@
-import { FC, useState } from "react";
+import { FC, MouseEventHandler, RefObject, useRef, useState } from "react";
 import { Project } from "../../interface";
 import { StyledProject } from "./StyledProject";
-import Link from "next/link";
 import { Button, ProjectPreview } from "./../../components";
 import Image from "next/image";
 
@@ -15,11 +14,35 @@ const Index: FC<Project> = ({
     image,
     name,
 }) => {
+    const projectRef = useRef<null | HTMLElement>(null);
     const [showPreview, setShowPreview] = useState(false);
+
+    const handlePreview: MouseEventHandler<HTMLButtonElement> = () => {
+        setShowPreview((prev) => !prev);
+        let projectContainer = projectRef.current!;
+
+        // scroll screen to place attention on the preview video when user wants to check preview
+        if (!showPreview) projectContainer.scrollIntoView(false);
+    };
 
     return (
         <StyledProject>
-            <article>
+            <article ref={projectRef}>
+                <div className="project__figures">
+                    <figure className="project__img">
+                        <Image
+                            src={image}
+                            alt={`${name}'s screenshot`}
+                            layout="responsive"
+                        />
+                    </figure>
+                    {youtubeUrl && (
+                        <ProjectPreview
+                            show={showPreview}
+                            youtubeUrl={youtubeUrl}
+                        />
+                    )}
+                </div>
                 <section className="project__details">
                     <header>
                         <h3>{heading}</h3>
@@ -38,7 +61,7 @@ const Index: FC<Project> = ({
                     </ul>
                     <div className="project__links">
                         <a
-                            className="btn__primary"
+                            className="btn btn__secondary"
                             href={live}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -46,7 +69,7 @@ const Index: FC<Project> = ({
                             Live
                         </a>
                         <a
-                            className="btn__primary"
+                            className="btn btn__secondary"
                             href={source}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -57,14 +80,13 @@ const Index: FC<Project> = ({
                             <Button
                                 text="Preview"
                                 rest={{
-                                    onClick: () =>
-                                        setShowPreview((prev) => !prev),
+                                    onClick: handlePreview,
                                 }}
                             />
                         )}
                     </div>
                 </section>
-                <div className="project__figures">
+                {/* <div className="project__figures">
                     <figure className="project__img">
                         <Image
                             src={image}
@@ -78,7 +100,7 @@ const Index: FC<Project> = ({
                             youtubeUrl={youtubeUrl}
                         />
                     )}
-                </div>
+                </div> */}
             </article>
         </StyledProject>
     );

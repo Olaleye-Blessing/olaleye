@@ -18,7 +18,9 @@ export const StyledProject = styled.li`
 
     article {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
     }
 
     h3 {
@@ -38,6 +40,10 @@ export const StyledProject = styled.li`
             margin-bottom: 1rem;
         }
 
+        &__details {
+            height: 100%;
+        }
+
         &__links {
             margin-top: 3rem;
             display: flex;
@@ -47,12 +53,12 @@ export const StyledProject = styled.li`
 
             a {
                 font-size: 1.4rem;
-                padding: 0.3rem 2rem 0.7rem;
-                color: var(--color-red-100);
+                padding: 0.5rem 2rem 0.6rem;
+                /* color: var(--color-red-100); */
                 position: relative;
                 transition: all 0.3s linear;
                 background-color: transparent;
-                text-decoration: underline;
+                /* text-decoration: underline; */
 
                 &:hover {
                     text-decoration: none;
@@ -68,15 +74,19 @@ export const StyledProject = styled.li`
             }
 
             button {
-                padding: 0.7rem 1.8rem 0.7rem 1.8rem;
+                padding: 0.7rem 1.8rem 0.9rem;
                 font-size: 1.4rem;
                 cursor: pointer;
+            }
+
+            a,
+            button {
+                margin-bottom: 2rem;
             }
         }
 
         &__figures {
             width: 100%;
-            position: relative;
         }
 
         &__img {
@@ -94,7 +104,7 @@ export const StyledProject = styled.li`
             opacity: 0;
 
             &.show {
-                height: 100%;
+                height: 70%;
                 opacity: 1;
             }
         }
@@ -116,16 +126,12 @@ export const StyledProject = styled.li`
         .project {
             &__details {
                 width: 100%;
-                height: auto;
-                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
 
             &__figures {
-                height: auto;
-                flex: 5;
-
-                display: flex;
-                align-items: center;
             }
 
             &__img {
