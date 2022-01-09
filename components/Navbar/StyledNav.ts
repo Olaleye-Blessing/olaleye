@@ -4,12 +4,19 @@ export const StyledNav = styled.nav`
     padding-top: 1rem;
     padding-bottom: 1.3rem;
     z-index: 120;
-    box-shadow: var(--box-shadow-md);
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--bg-blurred);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &.scrolled {
+        box-shadow: var(--box-shadow-md);
+        background-color: var(--bg-blurred);
+        background-color: rgba(14, 20, 27, 0.8);
+        /* background-color: rgba(169, 185, 204, 0.5); */
+        /* background-color: rgba(115, 130, 148, 0.3); */
+    }
 
     .nav {
         &__container {

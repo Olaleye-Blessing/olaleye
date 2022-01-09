@@ -1,10 +1,11 @@
-import { createRef, FC, Ref, useRef } from "react";
+import { createRef, FC, useEffect, useRef } from "react";
 import { HomeLogo, Toggle } from "..";
 import { Links } from "./links";
 import { StyledNav } from "./StyledNav";
 import Link from "next/link";
 
 const Index: FC = () => {
+    const navRef = useRef() as React.MutableRefObject<HTMLElement>;
     let hamburgerRef = createRef<HTMLButtonElement>();
     let listRef = useRef<HTMLUListElement | null>(null);
 
@@ -32,8 +33,25 @@ const Index: FC = () => {
         }
     };
 
+    useEffect(() => {
+        const addNavBackgroundOnScroll = () => {
+            let height = window.pageYOffset;
+            let nav = navRef.current;
+
+            height > 80
+                ? nav.classList.add("scrolled")
+                : nav.classList.remove("scrolled");
+        };
+
+        window.addEventListener("scroll", addNavBackgroundOnScroll);
+
+        return () => {
+            window.removeEventListener("scroll", addNavBackgroundOnScroll);
+        };
+    }, []);
+
     return (
-        <StyledNav className="">
+        <StyledNav className="" ref={navRef}>
             <div className="container nav__container">
                 <div className="nav__logo">
                     <HomeLogo />
