@@ -65,10 +65,10 @@ const GlobalStyle = createGlobalStyle`
         font-family: var(--font-primary);
         font-weight: 400;
     }
-    
-    html, body, #__next {
-        /* scrollbar-width: thin; */
-        scrollbar-width: none;
+
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-gray-900) var(--color-gray-600);
     }
 
     ::-webkit-scrollbar-track {
