@@ -98,8 +98,16 @@ const GlobalStyle = createGlobalStyle`
 
     a, button {
         font-family: var(--font-secondary);
+
         &:hover {
             opacity: 0.7;
+        }
+
+        &:focus {
+            background-color: var(--color-gray-600);
+            color: var(--color-gray-900);
+            outline: 0.2rem solid;
+            border-color: transparent;
         }
     }
 
