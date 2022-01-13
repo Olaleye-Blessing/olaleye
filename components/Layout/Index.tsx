@@ -10,6 +10,7 @@ const Index: FC = ({ children }) => {
                     name="viewport"
                     content="width=device-width,initial-scale=1"
                 />
+                <meta name="theme-color" content="#fa3879" />
             </Head>
             <Navbar />
             {children}
