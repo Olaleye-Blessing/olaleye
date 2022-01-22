@@ -11,7 +11,7 @@ const Header: FC = () => {
                 <div className="header__content">
                     <h1>
                         <span className="header__greeting">
-                            Hello Stranger! I&apos;m{" "}
+                            Hello Friend! I&apos;m{" "}
                         </span>
                         <span className="header__name">Olaleye Blessing,</span>
                     </h1>

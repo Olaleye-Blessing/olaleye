@@ -30,12 +30,14 @@ export const StyledHeader = styled.header`
 
         &__greeting {
             font-size: 1.5rem;
+            margin-bottom: calc(-0.5rem - 0.4vw);
+            color: var(--color-gray-800);
         }
 
         &__name {
             font-size: calc(3rem + 4vw);
             font-size: clamp(2rem, 12vw, 9rem);
-            line-height: 1.3;
+            line-height: 1.2;
             margin-top: 0.1rem;
             margin-bottom: 0.3rem;
         }
