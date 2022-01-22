@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 
 const Projects: FC = () => {
     return (
-        <StyledSection id="projects">
+        <StyledSection id="projects" aria-label="Projects' Section">
             <Fade top>
                 <header className="section__header-main">
                     <h2 className="section__header-main-head">PROJECTS</h2>
