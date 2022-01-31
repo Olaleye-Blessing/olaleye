@@ -8,9 +8,9 @@ export const projects: Project[] = [
     {
         name: "muvus",
         heading:
-            "MUVUS - All about movies, tv series, people and community groups.",
+            "MUVUS - All about movies, tv-series, people and community groups.",
         paragraphs: [
-            "Muvus is a media project that lists some series of movies, tv series and people. All media have a set of community(chat forum) that could be created by any authenticated user.",
+            "Muvus is a media project that lists some series of movies, tv-series, and people. All media have a set of a community(chat forum) that could be created by an authenticated user.",
 
             "Users can also search for a particular media.",
         ],
@@ -24,10 +24,10 @@ export const projects: Project[] = [
     {
         name: "covid",
         heading:
-            "NCOV - Covid details for countries, continents and the world in general.",
+            "NCOV - Covid details for countries, continents, and the world in general.",
         paragraphs: [
-            "nCov gives short covid information of countries, continents and the world in general. It is a 5-page project in which one of the pages compare data",
-            "Users can also save any compared data",
+            "nCov gives short covid information of countries, continents, and the world in general. It is a 5-page project in which one of the pages compares data.",
+            "Users can also save any compared data.",
         ],
         tech: ["nextjs", "scss", "tailwindcss", "API"],
         source: "https://github.com/Olaleye-Blessing/covidtracker",
@@ -39,10 +39,10 @@ export const projects: Project[] = [
     {
         name: "crypto",
         heading:
-            "CRYPTUS - Home of crypturrencies, nfts, exchanges and crypto news",
+            "CRYPTUS - Home of cryptocurrencies, NFTs, exchanges, and crypto news",
         paragraphs: [
-            "Cryptus provides basic information about popular coins in the world, latest crypto news, popular exchanges website and NFTS.",
-            "Users can filter out coins and check coin's history in form of a simple graph.",
+            "Cryptus provides basic information about popular coins in the world, the latest crypto news, popular exchanges website, and NFTs.",
+            "Users can filter out coins and check the coin's history in form of a simple graph.",
         ],
         tech: ["nextjs", "typescript", "scss", "tailwindcss", "API"],
         source: "https://github.com/Olaleye-Blessing/cryptus",
@@ -53,9 +53,9 @@ export const projects: Project[] = [
 
     {
         name: "foodcheck",
-        heading: "FoodCheck - Get your recipe for your favourite dish",
+        heading: "FoodCheck - Get your recipe for your favorite dish.",
         paragraphs: [
-            "FoodCheck lists out recipes for preparing your favourite dish.",
+            "FoodCheck lists out recipes for preparing your favorite dish.",
             "The main purpose of this project is to learn about unit testing.",
         ],
         tech: ["reactjs", "styled-components", "API", "Testing"],

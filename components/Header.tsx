@@ -17,7 +17,7 @@ const Header: FC = () => {
                     </h1>
                     <p className="header__intro">
                         a passionate frontend developer focused on creating
-                        interactive, accessible and responsive websites.
+                        interactive, accessible, and responsive websites.
                     </p>
                     <div className="header__links">
                         <Link href="/#projects">

@@ -13,7 +13,7 @@ const Projects: FC = () => {
                     <h2 className="section__header-main-head">PROJECTS</h2>
                     <p>
                         These are some of the projects I built to practice and
-                        get better in the technologies mentioned above.
+                        get better at the technologies mentioned above.
                     </p>
                 </header>
             </Fade>
@@ -31,7 +31,7 @@ const Projects: FC = () => {
                 >
                     cool projects
                 </a>{" "}
-                I built when I started learning about web development
+                I built when I started learning about web development.
             </p>
         </StyledSection>
     );
