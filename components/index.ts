@@ -13,3 +13,4 @@ export { default as AboutMe } from "./AboutMe/Index";
 export { default as About } from "./AboutMe/About";
 export { default as AboutHeader } from "./AboutMe/AboutHeader";
 export { default as Header } from "./Header";
+export { default as HomeMetaHead } from "./HomeMetaHead";
