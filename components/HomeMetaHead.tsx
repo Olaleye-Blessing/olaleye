@@ -35,6 +35,10 @@ const HomeMetaHead: FC = () => {
                 name="twitter:description"
                 content="A passionate frontend developer focused on creating interactive, accessible and responsive websites"
             />
+            <meta
+                name="twitter:image"
+                content="https://raw.githubusercontent.com/Olaleye-Blessing/olaleye/master/public/static/images/blessing.jpeg"
+            />
             {/*  */}
 
             {/* Facebook Open Graph */}
