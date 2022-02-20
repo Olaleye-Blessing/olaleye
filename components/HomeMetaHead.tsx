@@ -42,6 +42,7 @@ const HomeMetaHead: FC = () => {
             {/*  */}
 
             {/* Facebook Open Graph */}
+            <meta property="og:type" content="website" />
             <meta
                 property="og:description"
                 content="A passionate frontend developer focused on creating interactive, accessible and responsive websites"
@@ -49,6 +50,10 @@ const HomeMetaHead: FC = () => {
             <meta
                 property="og:title"
                 content="Olaleye Blessing | Frontend Developer"
+            />
+            <meta
+                property="og:image"
+                content="https://raw.githubusercontent.com/Olaleye-Blessing/olaleye/master/public/static/images/blessing.jpeg"
             />
         </Head>
     );
