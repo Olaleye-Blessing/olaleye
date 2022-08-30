@@ -1,4 +1,5 @@
 export { default as Layout } from "./Layout/Index";
+
 export { default as Navbar } from "./Navbar/Index";
 export { default as Footer } from "./Footer/Index";
 export { default as Toggle } from "./Toggle";
@@ -14,3 +15,4 @@ export { default as About } from "./AboutMe/About";
 export { default as AboutHeader } from "./AboutMe/AboutHeader";
 export { default as Header } from "./Header";
 export { default as HomeMetaHead } from "./HomeMetaHead";
+export { default as Select } from "./Input/Select";

@@ -24,6 +24,9 @@ const GlobalStyle = createGlobalStyle`
         --color-gray-800: #9ca8b4;
         --color-gray-900: #d9e0e8;
 
+        --issue-open: #3fb950;
+        --issue-completed: #a371f7;
+
         --shadow: 0 0.1rem 0.1rem hsl(0deg 0% 0% / 0.075);
         --shadow-last: 0 16px 16px hsl(0deg 0% 0% / 0.075);
 
