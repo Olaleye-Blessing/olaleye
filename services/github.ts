@@ -13,11 +13,12 @@ export const getContributions = async (
     baseUrl.searchParams.set("page", `${page}`);
 
     const response = await fetch(baseUrl.toString());
-    const { items } = (await response.json()) as {
+    const { items, total_count } = (await response.json()) as {
       items: Contribution[];
+      total_count: number;
     };
 
-    return items;
+    return { items, total_count };
   } catch (error: any) {
     throw new Error("Something went wrong");
   }

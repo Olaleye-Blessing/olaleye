@@ -41,6 +41,8 @@ export const StyledContributions = styled.ul`
 
   a {
     color: var(--fg-primary);
+    display: inline-block;
+    margin-right: 0.6rem;
 
     &:hover,
     &:focus {
