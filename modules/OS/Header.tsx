@@ -5,7 +5,7 @@ const Header: FC = () => {
   return (
     <StyledHeader className="container">
       <h1>
-        Theser are the list of contributions I&rsquo;ve made to open source
+        These are the list of contributions I&rsquo;ve made to open source
         projects.
       </h1>
     </StyledHeader>

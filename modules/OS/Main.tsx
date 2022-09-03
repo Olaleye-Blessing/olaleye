@@ -1,9 +1,11 @@
 import { FC, useEffect, useState } from "react";
 import styled from "styled-components";
+import { Button } from "../../components";
 import { Contribution, Request } from "../../interface";
 import { getContributions } from "../../services/github";
 import Contributions from "./Contributions";
 import Form from "./Form";
+import { StyledMain } from "./Styles/StyledMain";
 
 interface Github {
   page: number;
@@ -11,7 +13,9 @@ interface Github {
   type: string;
 }
 
-interface Contributions extends Github, Request<Contribution[]> {}
+interface Contributions extends Github, Request<Contribution[]> {
+  total_count: number;
+}
 
 const Main: FC = () => {
   const [contributions, setContributions] = useState<Contributions>({
@@ -19,21 +23,26 @@ const Main: FC = () => {
     data: [],
     error: "",
     page: 1,
-    perPage: 20,
+    perPage: 5,
     type: "issue",
+    total_count: 0,
   });
 
   const loadContributions = async () => {
     try {
       setContributions((prev) => ({ ...prev, loading: true }));
 
-      const data = await getContributions(
+      const { items: data, total_count } = await getContributions(
         contributions.type,
         contributions.perPage,
         contributions.page
       );
 
-      setContributions((prev) => ({ ...prev, data }));
+      setContributions((prev) => ({
+        ...prev,
+        data: [...prev.data, ...data],
+        total_count,
+      }));
     } catch (error: any) {
       setContributions((prev) => ({ ...prev, error: error.message }));
     } finally {
@@ -42,13 +51,22 @@ const Main: FC = () => {
   };
 
   useEffect(() => {
+    setContributions((prev) => ({ ...prev, page: 1, data: [] }));
     loadContributions();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [contributions.type, contributions.perPage]);
 
+  useEffect(() => {
+    if (contributions.page > 1) {
+      loadContributions();
+    }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [contributions.page]);
+
   return (
-    <main className="container">
+    <StyledMain className="container">
       <header
         style={{
           position: "sticky",
@@ -69,18 +87,32 @@ const Main: FC = () => {
         />
       </header>
       <section>
-        {contributions.loading ? (
-          <p>Loading...</p>
-        ) : contributions.error ? (
-          <p>{contributions.error}</p>
-        ) : (
+        {contributions.data.length > 0 ? (
           <Contributions
             type={contributions.type}
             contributions={contributions.data}
           />
-        )}
+        ) : !contributions.loading ? (
+          <h2>No contributions found</h2>
+        ) : null}
+        {contributions.loading ? (
+          <p className="contributions__loading">Loading...</p>
+        ) : contributions.error ? (
+          <p className="contributions__error">{contributions.error}</p>
+        ) : null}
+        {contributions.data.length > 0 &&
+          contributions.data.length < contributions.total_count && (
+            <Button
+              text="Load more"
+              onClick={() =>
+                setContributions((prev) => ({ ...prev, page: prev.page + 1 }))
+              }
+              disabled={contributions.loading}
+              className="load-more"
+            />
+          )}
       </section>
-    </main>
+    </StyledMain>
   );
 };
 
