@@ -3,14 +3,14 @@ import { useEffect } from "react";
 import { Header, Main, MetaHead } from "../modules/OS";
 
 const OS: NextPage = () => {
-    return (
-        <>
-            <MetaHead />
+  return (
+    <>
+      <MetaHead />
 
-            <Header />
-            <Main />
-        </>
-    );
+      <Header />
+      <Main />
+    </>
+  );
 };
 
 export default OS;
