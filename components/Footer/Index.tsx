@@ -29,18 +29,13 @@ const Index: FC = () => {
               ))}
             </ul>
             <p className="footer__contact-gmail">
-              <a href="mailto:olayinkablexxy@gmail.com">
+              <a href="mailto:olaleyedev@gmail.com">
                 <figure aria-hidden="true">
                   <CgMail />
                 </figure>
-                <span>olayinkablexxy@gmail.com</span>
+                <span>olaleyedev@gmail.com</span>
               </a>
-              <a href="mailto:blessingolaleyejob@gmail.com">
-                <figure aria-hidden="true">
-                  <CgMail />
-                </figure>
-                <span>blessingolaleyejob@gmail.com</span>
-              </a>
+              
             </p>
           </section>
         </div>
