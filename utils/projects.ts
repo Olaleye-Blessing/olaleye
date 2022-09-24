@@ -16,7 +16,7 @@ export const projects: Project[] = [
     ],
     tech: ["nextjs", "scss", "tailwindcss", "firebase", "API"],
     source: "https://github.com/Olaleye-Blessing/muvus",
-    live: "https://muvus.herokuapp.com/",
+    live: "https://muvus.netlify.app/",
     youtubeUrl: "https://www.youtube.com/watch?v=aorIddDX8B8",
     image: Muvus,
   },
