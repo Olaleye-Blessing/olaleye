@@ -1,24 +1,31 @@
 import { Project } from "../interface";
-import Muvus from "./../public/static/images/projects/muvus.webp";
+import Oshere from "./../public/static/images/projects/oshere.webp";
 import Covid from "./../public/static/images/projects/covid.webp";
 import Crypto from "./../public/static/images/projects/crypto.webp";
 import FoodCheck from "./../public/static/images/projects/foodcheck.webp";
 
 export const projects: Project[] = [
   {
-    name: "muvus",
-    heading:
-      "MUVUS - All about movies, tv-series, people and community groups.",
+    name: "oshere",
+    heading: "Oshere - All about movies, tv-series, and communities.",
     paragraphs: [
-      "Muvus is a media project that lists some series of movies, tv-series, and people. All media have a set of a community(chat forum) that could be created by an authenticated user.",
-
-      "Users can also search for a particular media.",
+      "Oshere is a media project that lists many movies and television series. Every form of media has a community (chat forum) that any authenticated user may start.",
+      "In addition, users can conduct media searches.",
     ],
-    tech: ["nextjs", "scss", "tailwindcss", "firebase", "API"],
-    source: "https://github.com/Olaleye-Blessing/muvus",
-    live: "https://muvus.netlify.app/",
+    tech: [
+      "Nextjs",
+      "Tailwindcss",
+      "Typescript",
+      "Firebase",
+      "API",
+      "Cypress",
+      "Jest",
+      "React-Testing-Library",
+    ],
+    source: "https://github.com/Olaleye-Blessing/oshere",
+    live: "https://oshere.blessingolaleye.xyz/",
     youtubeUrl: "https://www.youtube.com/watch?v=aorIddDX8B8",
-    image: Muvus,
+    image: Oshere,
   },
 
   {
@@ -29,7 +36,7 @@ export const projects: Project[] = [
       "nCov gives short covid information of countries, continents, and the world in general. It is a 5-page project in which one of the pages compares data.",
       "Users can also save any compared data.",
     ],
-    tech: ["nextjs", "scss", "tailwindcss", "API"],
+    tech: ["Nextjs", "SCSS", "Tailwindcss", "API"],
     source: "https://github.com/Olaleye-Blessing/covidtracker",
     live: "https://covidtracker-umber.vercel.app/",
     youtubeUrl: "https://www.youtube.com/watch?v=K0kYdQSalbo",
@@ -44,7 +51,8 @@ export const projects: Project[] = [
       "Cryptus provides basic information about popular coins in the world, the latest crypto news, popular exchanges website, and NFTs.",
       "Users can filter out coins and check the coin's history in form of a simple graph.",
     ],
-    tech: ["nextjs", "typescript", "scss", "tailwindcss", "API"],
+
+    tech: ["Nextjs", "Typescript", "SCSS", "Tailwindcss", "API"],
     source: "https://github.com/Olaleye-Blessing/cryptus",
     live: "https://cryptus-nine.vercel.app/",
     youtubeUrl: "https://www.youtube.com/watch?v=Ec8DtBIMyfE",
@@ -58,7 +66,7 @@ export const projects: Project[] = [
       "FoodCheck lists out recipes for preparing your favorite dish.",
       "The main purpose of this project is to learn about unit testing.",
     ],
-    tech: ["reactjs", "styled-components", "API", "Testing"],
+    tech: ["Reactjs", "Styled-Components", "API", "Testing"],
     source: "https://github.com/Olaleye-Blessing/foodcheck",
     live: "https://foodcheck.vercel.app/",
     image: FoodCheck,
