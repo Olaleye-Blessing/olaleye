@@ -70,7 +70,12 @@ const Index: FC = () => {
           {Links.map(({ path, text }) => (
             <li key={path} className="nav__lists">
               <Link href={path}>
-                <a className="nav__links" onClick={closeHamburger}>
+                <a
+                  className="nav__links"
+                  onClick={closeHamburger}
+                  target={text === "BLOG" ? "_blank" : "_self"}
+                  rel={text === "BLOG" ? "noopener noreferrer" : ""}
+                >
                   {text}
                 </a>
               </Link>
