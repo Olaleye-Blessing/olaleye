@@ -181,14 +181,14 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         justify-content: start;
         flex-flow: row wrap;
-        margin-top: 2rem;
+        margin-top: 0.8rem;
     }
 
     .tech {
         background-color: var(--color-black-100);
         width: max-content;
         margin-right: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         padding: 0.6rem 1rem 0.8rem;
         border-radius: var(--border-rad-sm);
         font-size: 1.4rem;

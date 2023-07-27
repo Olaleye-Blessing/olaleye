@@ -207,4 +207,8 @@ export const StyledSubSection = styled.section`
     margin-bottom: 2rem;
     opacity: 0.8;
   }
+
+  h4 {
+    /* margin-top: -0.5rem; */
+  }
 `;
