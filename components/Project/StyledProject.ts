@@ -57,8 +57,6 @@ export const StyledProject = styled.li`
         /* color: var(--color-red-100); */
         position: relative;
         transition: all 0.3s linear;
-        background-color: transparent;
-        /* text-decoration: underline; */
 
         &:hover {
           text-decoration: none;

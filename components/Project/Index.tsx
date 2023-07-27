@@ -58,7 +58,7 @@ const Index: FC<Project> = ({
           </ul>
           <div className="project__links">
             <a
-              className="btn btn__secondary"
+              className="btn btn__primary"
               href={live}
               target="_blank"
               rel="noopener noreferrer"
