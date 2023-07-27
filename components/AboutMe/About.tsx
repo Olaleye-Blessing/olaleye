@@ -11,14 +11,15 @@ const About: FC = () => {
           <h3>Want to know me?</h3>
         </header>
         <p>
-          I&apos;m a <strong>Frontend Developer</strong> whose whole interest is
-          building interactive, accessible, and responsive websites. My project
-          section contains some beautiful websites I&apos;ve built.
+          I&apos;m a <strong>Frontend Developer</strong> passionate about
+          crafting interactive, accessible, and responsive websites. Check out
+          my <a href="#projects">projects section</a> for some of the beautiful
+          websites I&apos;ve built.
         </p>
         <p>
           I&apos;m currently open to Job opportunities where I can contribute to
-          your business and make your users happy. Contact me if you&apos;re
-          interested in having a taste of my skills.
+          your business and create delightful user experiences. Feel free to
+          contact me if you find my skills useful.
         </p>
         <Link href="/#contact">
           <a className="btn btn__primary">Contact Me</a>

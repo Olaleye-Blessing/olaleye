@@ -22,16 +22,16 @@ const Projects: FC = () => {
           <Project key={i} {...project} />
         ))}
       </StyledProjects>
-      <p className="section__project-others">
-        Check out my other{" "}
+      <p>
+        You can find other worthy projects on{" "}
         <a
           href="https://portfolio-git-master-olaleye-blessing.vercel.app/projects.html"
           target="_blank"
           rel="noreferrer"
         >
-          cool projects
-        </a>{" "}
-        I built when I started learning about web development.
+          my first version of the portfolio
+        </a>
+        .
       </p>
     </StyledSection>
   );
