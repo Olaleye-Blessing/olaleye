@@ -23,7 +23,7 @@ const Main: FC = () => {
     data: [],
     error: "",
     page: 1,
-    perPage: 5,
+    perPage: 20,
     type: "issue",
     total_count: 0,
   });
