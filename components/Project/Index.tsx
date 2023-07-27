@@ -1,4 +1,4 @@
-import { FC, MouseEventHandler, RefObject, useRef, useState } from "react";
+import { FC, useRef, useState } from "react";
 import { Project } from "../../interface";
 import { StyledProject } from "./StyledProject";
 import { Button, ProjectPreview } from "./../../components";
@@ -17,11 +17,11 @@ const Index: FC<Project> = ({
   const projectRef = useRef<null | HTMLElement>(null);
   const [showPreview, setShowPreview] = useState(false);
 
-  const handlePreview: MouseEventHandler<HTMLButtonElement> = () => {
+  const handlePreview = () => {
     setShowPreview((prev) => !prev);
     let projectContainer = projectRef.current!;
 
-    // scroll screen to place attention on the preview video when user wants to check preview
+    // place attention on the preview video when user wants to view preview
     if (!showPreview) projectContainer.scrollIntoView(false);
   };
 
@@ -73,31 +73,9 @@ const Index: FC<Project> = ({
             >
               Source
             </a>
-            {youtubeUrl && (
-              <Button
-                text="Preview"
-                rest={{
-                  onClick: handlePreview,
-                }}
-              />
-            )}
+            {youtubeUrl && <Button text="Preview" onClick={handlePreview} />}
           </div>
         </section>
-        {/* <div className="project__figures">
-                    <figure className="project__img">
-                        <Image
-                            src={image}
-                            alt={`${name}'s screenshot`}
-                            layout="responsive"
-                        />
-                    </figure>
-                    {youtubeUrl && (
-                        <ProjectPreview
-                            show={showPreview}
-                            youtubeUrl={youtubeUrl}
-                        />
-                    )}
-                </div> */}
       </article>
     </StyledProject>
   );
