@@ -1,0 +1,3 @@
+.experience:last-child > div:first-child {
+  height: 89%;
+}

@@ -55,4 +55,30 @@
   * {
     @apply border-border;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-extrabold mb-2;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer utilities {
+  .highlight {
+    @apply text-primary;
+  }
 }
