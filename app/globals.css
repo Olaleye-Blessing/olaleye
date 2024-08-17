@@ -85,4 +85,8 @@
   .highlight {
     @apply text-primary;
   }
+
+  .sub_title {
+    @apply text-muted-foreground -mt-2 text-sm;
+  }
 }
