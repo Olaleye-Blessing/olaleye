@@ -14,7 +14,7 @@ export default function Section({
 	children,
 }: SectionProps) {
 	return (
-		<section id={id} className='px-4 mb-8 scroll-mt-10'>
+		<section id={id} className='px-4 mb-8 scroll-mt-16'>
 			<header className='mb-4'>
 				<h2>{title}</h2>
 				{description && (

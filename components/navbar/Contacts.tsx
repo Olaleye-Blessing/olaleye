@@ -2,12 +2,7 @@ import { MoveUpRight } from 'lucide-react';
 
 export default function Contacts() {
 	return (
-		<div
-			className='flex items-center justify-center flex-wrap fixed p-4 top-0 right-0 left-0 z-50'
-			style={{
-				backdropFilter: 'blur(1.3rem)',
-			}}
-		>
+		<ul className='flex items-center justify-end flex-wrap'>
 			<Contact
 				href='https://www.linkedin.com/in/blessing-olaleye-139a22204/'
 				text='Linkedin'
@@ -21,7 +16,7 @@ export default function Contacts() {
 				href='https://www.blessingolaleye.xyz/resume.pdf'
 				text='Resume'
 			/>
-		</div>
+		</ul>
 	);
 }
 
