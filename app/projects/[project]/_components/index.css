@@ -1,0 +1,23 @@
+.page {
+	@apply my-8;
+}
+
+.page :is(h2, h3) {
+	@apply mt-4;
+}
+
+.page main li {
+  @apply list-disc ml-4;
+}
+
+.page main li li {
+  @apply list-[circle];
+}
+
+.page blockquote {
+  @apply p-4 my-4 rounded-md bg-green-900/50;
+}
+
+.page a {
+  @apply text-primary underline;
+}
