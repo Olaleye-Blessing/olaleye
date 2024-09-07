@@ -1,6 +1,6 @@
 import Experience from '@/components/home/experience';
 import Header from '@/components/home/header';
-import Projects from '@/components/home/projects';
+import Projects from '@/components/projects';
 import Technologies from '@/components/home/technologies';
 
 export default function Page() {
@@ -8,7 +8,11 @@ export default function Page() {
 		<main>
 			<Header />
 			<Experience />
-			<Projects />
+			<Projects
+				title='Projects'
+				description='These are some of the projects I have worked on over the years.'
+				isDraftMode
+			/>
 			<Technologies />
 		</main>
 	);
