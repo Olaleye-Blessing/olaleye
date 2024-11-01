@@ -9,6 +9,15 @@ export type TArticle = {
 
 export const articles: TArticle[] = [
 	{
+		title: 'Securing Your Single Page Application',
+		summary:
+			'Single-page Applications (SPAs) are web apps that load a single HTML page. They update content dynamically with JavaScript, eliminating full-page reloads for a smoother experience. This provides smooth navigation and a more responsive feel. Because SPAs don’t reload, traditional login methods need adjustments to stay secure, and this article will show you what to do.',
+		href: 'https://blog.openreplay.com/securing-your-single-page-application/',
+		website: 'Openreplay',
+		techs: ['Backend', 'Express.js', 'Frontend', 'React.js'],
+		date: '2024-10-04',
+	},
+	{
 		title: 'Implementing Optimistic UI in React.js/Next.js',
 		summary:
 			'A smooth and responsive user experience(UX) is important for any modern web application. Users expect quick interactions and immediate feedback after performing an action, even when data needs to be updated on a server. This article talks about how to implement optimistic UI (especially in React.js/Next.js).',
