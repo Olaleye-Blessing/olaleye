@@ -9,7 +9,7 @@ const pages = [
 
 export default function Pages() {
 	return (
-		<ul className='flex items-center justify-start flex-wrap'>
+		<ul>
 			{pages.map((page) => (
 				<li key={page.label}>
 					<Link href={page.href} className='mr-2 hover:underline'>

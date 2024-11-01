@@ -2,7 +2,7 @@ import { MoveUpRight } from 'lucide-react';
 
 export default function Contacts() {
 	return (
-		<ul className='flex items-center justify-end flex-wrap'>
+		<ul>
 			<Contact
 				href='https://www.linkedin.com/in/blessing-olaleye-139a22204/'
 				text='Linkedin'
@@ -27,16 +27,18 @@ interface ContactProps {
 
 const Contact = ({ href, text }: ContactProps) => {
 	return (
-		<a
-			href={href}
-			target='_blank'
-			rel='noopener noreferrer'
-			className='text-primary odd:text-foreground mr-2 hover:underline flex items-center justify-center'
-		>
-			<span>{text}</span>
-			<span className='ml-[0.1rem]'>
-				<MoveUpRight className='w-3 h-3' />
-			</span>
-		</a>
+		<li className='text-primary odd:text-foreground'>
+			<a
+				href={href}
+				target='_blank'
+				rel='noopener noreferrer'
+				className='mr-2 hover:underline'
+			>
+				<span>{text}</span>
+				<span className='ml-[0.1rem]'>
+					<MoveUpRight className='w-3 h-3' />
+				</span>
+			</a>
+		</li>
 	);
 };

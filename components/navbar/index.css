@@ -1,0 +1,43 @@
+.hamburger {
+  @apply block cursor-pointer;
+  @apply md:hidden;
+}
+
+.bar {
+  @apply block w-[1.5625rem] h-[0.1875rem] mx-auto my-[0.325rem] bg-foreground;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  @apply opacity-0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(0.5rem) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-0.5rem) rotate(-45deg);
+}
+
+.nav__contents {
+  @apply transition-all h-0 overflow-hidden bg-background flex flex-col absolute left-0 w-full top-[3.88rem];
+}
+
+.hamburger.active + .nav__contents {
+  @apply h-screen max-h-[70vh] overflow-auto;
+}
+
+.nav__contents, .hamburger.active + .nav__contents {
+  @apply md:static md:h-auto md:max-h-none md:flex md:items-center md:justify-between md:flex-row md:bg-transparent;
+}
+
+.nav__contents ul {
+  @apply px-4;
+  @apply md:px-0 md:flex md:items-center md:justify-end md:flex-wrap;
+}
+
+.nav__contents a {
+  @apply flex items-center justify-start w-full py-2;
+}
