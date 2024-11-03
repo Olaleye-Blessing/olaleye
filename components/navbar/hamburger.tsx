@@ -1,30 +1,17 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
-import { useEffect, useRef } from 'react';
+import { RefObject } from 'react';
 
-export default function Hamburger() {
-	const pathname = usePathname();
-	const toggleRef = useRef<HTMLButtonElement>(null);
+interface HamburgerProps {
+	btnRef: RefObject<HTMLButtonElement>;
+}
 
-	useEffect(() => {
-		const closeHamburger = () => {
-			const button = toggleRef.current;
-			if (!button) return;
-
-			button.classList.remove('active');
-		};
-
-		closeHamburger();
-	}, [pathname]);
-
+export default function Hamburger({ btnRef }: HamburgerProps) {
 	return (
 		<button
-			ref={toggleRef}
+			ref={btnRef}
 			className='hamburger'
-			onClick={(e) => {
-				e.currentTarget.classList.toggle('active');
-			}}
+			onClick={() => btnRef.current?.classList.toggle('active')}
 		>
 			<span className='bar'></span>
 			<span className='bar'></span>

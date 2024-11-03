@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 
 const pages = [
@@ -7,12 +9,20 @@ const pages = [
 	{ href: '/articles', label: 'Articles' },
 ];
 
-export default function Pages() {
+interface PagesProps {
+	closeHamburger: () => void;
+}
+
+export default function Pages({ closeHamburger }: PagesProps) {
 	return (
 		<ul>
 			{pages.map((page) => (
 				<li key={page.label}>
-					<Link href={page.href} className='mr-2 hover:underline'>
+					<Link
+						href={page.href}
+						className='mr-2 hover:underline'
+						onClick={closeHamburger}
+					>
 						{page.label}
 					</Link>
 				</li>
