@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import { MoveUpRight } from 'lucide-react';
 
 export default function Contacts() {
@@ -13,8 +14,9 @@ export default function Contacts() {
 			/>
 			<Contact href='https://github.com/Olaleye-Blessing' text='Github' />
 			<Contact
-				href='https://www.blessingolaleye.xyz/resume.pdf'
+				href='https://docs.google.com/document/d/1hMcJt7FRYu3womhWw2XjnWOTdmN4wnwl09Mg2S84t8g/edit?usp=sharing'
 				text='Resume'
+				className='fixed top-2 right-2 md:static'
 			/>
 		</ul>
 	);
@@ -23,11 +25,12 @@ export default function Contacts() {
 interface ContactProps {
 	href: string;
 	text: string;
+	className?: string;
 }
 
-const Contact = ({ href, text }: ContactProps) => {
+const Contact = ({ href, text, className }: ContactProps) => {
 	return (
-		<li className='text-primary odd:text-foreground'>
+		<li className={cn('text-primary odd:text-foreground', className)}>
 			<a
 				href={href}
 				target='_blank'
