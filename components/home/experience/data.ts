@@ -2,6 +2,7 @@ export const experiences = [
 	{
 		duration: 'April 2023 - Present',
 		title: 'Frontend Developer',
+		company: 'HireforceOne',
 		website: 'https://integration.hireforceone.com/en',
 		location: 'Remote, Belgium',
 		descriptions: [
@@ -21,6 +22,7 @@ export const experiences = [
 	{
 		duration: 'May 2022 - May 2023',
 		title: 'Software Developer',
+		company: 'Projecttent',
 		website: 'https://projecttent.com/',
 		location: 'Remote, California',
 		descriptions: [
@@ -42,6 +44,7 @@ export const experiences = [
 	{
 		duration: 'Jan 2021 - Dec 2022',
 		title: 'Frontend Developer',
+		company: 'Solace Imaging',
 		website: 'https://solaceimaging.com/',
 		location: 'Remote, Canada',
 		descriptions: [

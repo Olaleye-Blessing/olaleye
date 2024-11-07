@@ -28,16 +28,23 @@ export default function Experience() {
 								>
 									{exp.duration}
 								</p>
-								<p className='text-primary'>{exp.location}</p>
+								<p className='text-primary-foreground'>
+									{exp.location}
+								</p>
 							</div>
 							<div>
-								<h3>
+								<h3 className='flex items-center justify-start flex-wrap'>
+									<span>{exp.title} </span>{' '}
+									<span className='mx-1 text-muted-foreground text-sm mt-[0.15rem]'>
+										at{' '}
+									</span>{' '}
 									<a
 										href={exp.website}
-										className='flex items-center justify-start'
+										className='flex items-center justify-start text-primary'
+										target='_blank'
 									>
-										<span>{exp.title}</span>
-										<span className='ml-[0.1rem]'>
+										<span>{exp.company}</span>
+										<span>
 											<MoveUpRight className='w-3 h-3' />
 										</span>
 									</a>
