@@ -30,6 +30,7 @@ const PROJECT_GRAPHQL_FIELDS = `
   }
 	startDate
 	hasDetail
+	priority
 `;
 
 const fetchGraphQL = async (query: string, preview = false) => {
@@ -69,7 +70,7 @@ export const getAllProjects = async ({
 	const query =
 		type === 'all'
 			? `query {
-        portfolioProjectsCollection(where:{slug_exists: true}, order: startDate_DESC, limit: ${limit}, preview: ${
+        portfolioProjectsCollection(where:{slug_exists: true}, order: priority_DESC, limit: ${limit}, preview: ${
 					isDraftMode ? 'true' : 'false'
 			  }) {
           items {
@@ -78,7 +79,7 @@ export const getAllProjects = async ({
         }
       }`
 			: `query {
-        portfolioProjectsCollection(where:{slug_exists: true, hasDetail: true}, order: startDate_DESC, limit: ${limit}, preview: ${
+        portfolioProjectsCollection(where:{slug_exists: true, hasDetail: true}, order: priority_DESC, limit: ${limit}, preview: ${
 					isDraftMode ? 'true' : 'false'
 			  }) {
           items {
