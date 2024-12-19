@@ -7,7 +7,8 @@ import './_components/index.css';
 import './_components/detail.css';
 import NotAvailable from './_components/not-available';
 
-type PageProps = { params: { project: string }; searchParams: {} };
+// type PageProps = { params: { project: string }; searchParams: {} };
+type PageProps = { params: Promise<{ project: string }> };
 
 export async function generateStaticParams() {
 	const allProjects = await getAllProjects({ limit: 10, isDraftMode: true });
@@ -19,7 +20,7 @@ export async function generateStaticParams() {
 }
 
 export default async function Page(props: PageProps) {
-	const project = await getProject(props.params.project);
+	const project = await getProject((await props.params).project);
 
 	if (!project) return <NotAvailable />;
 
