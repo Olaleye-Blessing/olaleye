@@ -1,7 +1,20 @@
 export const experiences = [
 	{
-		duration: 'April 2023 - Present',
-		title: 'Frontend Developer',
+		duration: 'Feb 2025 - present',
+		title: 'Senior Frontend Developer',
+		company: 'Tasa Africa',
+		website: 'https://app.tasafrica.com/signup',
+		location: 'Remote, Nigeria',
+		descriptions: [
+			"Improving site's performance",
+			"Improving site's responsiveness",
+			"Leading the team's switch to TypeScript",
+		],
+		techs: ['TypeScript', 'TailwindCSS', 'React.js', 'Vite'],
+	},
+	{
+		duration: 'April 2023 - Nov 2024',
+		title: 'Lead Frontend Developer',
 		company: 'HireforceOne',
 		website: 'https://integration.hireforceone.com/en',
 		location: 'Remote, Belgium',
