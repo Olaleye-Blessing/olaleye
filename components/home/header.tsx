@@ -8,7 +8,7 @@ export default function Header() {
 				I&apos;m a full-stack developer with a strong foundation in
 				frontend development. With over{' '}
 				<em className='font-bold text-muted-foreground'>
-					3 years of experience
+					{new Date().getFullYear() - 2021} years of experience
 				</em>{' '}
 				crafting engaging user interfaces, I&apos;ve developed my skills
 				in building scalable web applications.
