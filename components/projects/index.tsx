@@ -28,7 +28,7 @@ export default async function Projects({
 						>
 							<figure
 								aria-hidden
-								className='w-full overflow-hidden bg-primary h-96 bg-center bg-no-repeat bg-cover flex-shrink-0'
+								className='w-full overflow-hidden bg-primary/10 h-60 bg-center bg-no-repeat bg-cover flex-shrink-0'
 								style={{
 									backgroundImage: `url(${project.coverImage.url})`,
 								}}

@@ -9,3 +9,7 @@
 .details p {
 	@apply py-2;
 }
+
+blockquote {
+	@apply !bg-primary/50;
+}
