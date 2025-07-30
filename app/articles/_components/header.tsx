@@ -10,14 +10,20 @@ export default function Header() {
 				</div>
 				<div className='mt-2 flex items-center justify-start'>
 					<p className='mr-2 mb-[0.1rem] font-bold'>Profiles:</p>
-					<ul className='flex items-center justify-start'>
+					<ul className='flex items-center justify-center'>
 						<Profile
 							website='Hashnode'
-							href='https://blog.blessingolaleye.xyz/'
+							href='https://hashnode.com/@Jongbo'
 						/>
+						<span className='mr-1'>|</span>
 						<Profile
 							website='Openreplay'
 							href='https://blog.openreplay.com/authors/olaleye-blessing'
+						/>
+						<span className='mr-1'>|</span>
+						<Profile
+							website='Dev.to'
+							href='https://dev.to/olaleyeblessing'
 						/>
 					</ul>
 				</div>
