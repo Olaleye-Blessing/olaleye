@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import { cn } from '@/lib/utils';
 import './globals.css';
 import Navbar from '@/components/navbar';
@@ -23,6 +24,7 @@ export default function RootLayout({
 				<div className='w-full max-w-6xl mx-auto'>
 					<Navbar />
 					{children}
+					<Analytics />
 				</div>
 			</body>
 		</html>
