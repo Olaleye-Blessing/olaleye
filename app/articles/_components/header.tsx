@@ -12,6 +12,11 @@ export default function Header() {
 					<p className='mr-2 mb-[0.1rem] font-bold'>Profiles:</p>
 					<ul className='flex items-center justify-center'>
 						<Profile
+							website='FreeCodeCamp'
+							href='https://www.freecodecamp.org/news/author/Jongbo/'
+						/>
+						<span className='mr-1'>|</span>
+						<Profile
 							website='Hashnode'
 							href='https://hashnode.com/@Jongbo'
 						/>

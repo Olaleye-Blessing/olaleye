@@ -9,6 +9,15 @@ export type TArticle = {
 
 export const articles: TArticle[] = [
 	{
+		title: 'How to Fix Memory Leaks in React Applications',
+		summary:
+			'Have you ever noticed your React application getting slower the longer you use it? This could be a result of memory leaks. Memory leaks are a common performance issue in React applications. They can slow down your application, crash your browser, and frustrate users.\nIn this tutorial, you’ll learn what causes memory leaks and how to fix them.',
+		href: 'https://www.freecodecamp.org/news/fix-memory-leaks-in-react-apps/',
+		website: 'FreeCodeCamp',
+		techs: ['Frontend', 'React.js'],
+		date: '2025-09-24',
+	},
+	{
 		title: 'Securing Your Single Page Application',
 		summary:
 			'Single-page Applications (SPAs) are web apps that load a single HTML page. They update content dynamically with JavaScript, eliminating full-page reloads for a smoother experience. This provides smooth navigation and a more responsive feel. Because SPAs don’t reload, traditional login methods need adjustments to stay secure, and this article will show you what to do.',
