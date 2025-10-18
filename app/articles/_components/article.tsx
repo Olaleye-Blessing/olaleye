@@ -1,5 +1,12 @@
 import { TArticle } from '../utils/articles';
 
+const formatDate = (dateString: string) =>
+	new Date(dateString).toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+	});
+
 export default function Article(article: TArticle) {
 	return (
 		<>
@@ -30,8 +37,8 @@ export default function Article(article: TArticle) {
 				))}
 			</ul>
 			<div className='flex items-center justify-between'>
-				<p className='text-muted-foreground'>
-					<time dateTime={article.date}>{article.date}</time>
+				<p className='text-muted-foreground text-sm'>
+					<time dateTime={article.date}>{formatDate(article.date)}</time>
 				</p>
 				<p className=''>
 					<a
