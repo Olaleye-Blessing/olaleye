@@ -1,16 +1,18 @@
 export const experiences = [
 	{
-		duration: 'Feb 2025 - present',
+		duration: 'Feb 2025 - Oct 2025',
 		title: 'Senior Frontend Developer',
 		company: 'Tasa Africa',
 		website: 'https://app.tasafrica.com/signup',
 		location: 'Remote, Nigeria',
 		descriptions: [
-			"Improving site's performance",
-			"Improving site's responsiveness",
-			"Leading the team's switch to TypeScript",
+			'Guided the team to better use of TypeScript.',
+			'Built a GitHub Actions pipeline for previews on all project pull requests.',
+			'Built a React component library for all projects.',
+			'Improved main app performance',
+			'Set up E2E tests during rebranding to v2',
 		],
-		techs: ['TypeScript', 'TailwindCSS', 'React.js', 'Vite'],
+		techs: ['TypeScript', 'TailwindCSS', 'React.js', 'Vite', 'Cypress'],
 	},
 	{
 		duration: 'April 2023 - Nov 2024',
