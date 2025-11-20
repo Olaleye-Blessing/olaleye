@@ -49,18 +49,18 @@ export default function Experience() {
 										</span>
 									</a>
 								</h3>
-								<div>
+								<ul>
 									{exp.descriptions.map((des) => {
 										return (
-											<p
+											<li
 												key={des}
-												className='text-muted-foreground mb-1 last:mb-0'
+												className='text-muted-foreground mb-1 last:mb-0 list-disc list-inside'
 											>
 												{des}
-											</p>
+											</li>
 										);
 									})}
-								</div>
+								</ul>
 								<ul className='flex items-center justify-start flex-wrap mt-2'>
 									{exp.techs.map((tec) => (
 										<Tech key={tec} name={tec} />
