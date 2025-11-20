@@ -1,5 +1,20 @@
 export const experiences = [
 	{
+		duration: 'May 2025 - Present',
+		title: 'Senior Frontend Developer',
+		company: 'Omniretail',
+		website: 'https://omniretail.africa/',
+		location: 'Remote, Nigeria',
+		descriptions: [
+			'Led development of the core onboarding and company registration flow that powers 140K+ retailers and 65+ major FMCG brands across Africa.',
+			'Provided secure authentication & authorization that handles business logic.',
+			'Delivered a dashboard that provides metrics on sales and employees.',
+			'Serve as a primary code reviewer (for some months), enforcing consistent code style and clean architecture, especially for newly onboarded developers.',
+			'Collaborate with designers, backend teams, and cross-team frontend developers to work on different features.',
+		],
+		techs: ['TypeScript', 'Next.js', 'Redux', 'RTQ Query'],
+	},
+	{
 		duration: 'Feb 2025 - Oct 2025',
 		title: 'Senior Frontend Developer',
 		company: 'Tasa Africa',
