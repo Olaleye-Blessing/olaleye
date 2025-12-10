@@ -25,7 +25,9 @@ export default function Article(article: TArticle) {
 					</span>
 				</h2>
 			</header>
-			<p className='sub_title mb-4 !text-base'>{article.summary}</p>
+			<p className='sub_title mb-4 !text-base whitespace-pre-line'>
+				{article.summary}
+			</p>
 			<ul className='mt-auto flex items-center justify-start'>
 				{article.techs.map((tech) => (
 					<li
@@ -38,7 +40,9 @@ export default function Article(article: TArticle) {
 			</ul>
 			<div className='flex items-center justify-between'>
 				<p className='text-muted-foreground text-sm'>
-					<time dateTime={article.date}>{formatDate(article.date)}</time>
+					<time dateTime={article.date}>
+						{formatDate(article.date)}
+					</time>
 				</p>
 				<p className=''>
 					<a
