@@ -51,7 +51,7 @@ export default function Experience() {
 									</a>
 								</h3>
 								{exp.employmentType && (
-									<p className='text-muted-foreground text-sm mt-1 mb-2 text-green-700 font-semibold'>
+									<p className='text-sm mt-1 mb-2 text-green-700 font-semibold'>
 										{exp.employmentType}
 									</p>
 								)}
