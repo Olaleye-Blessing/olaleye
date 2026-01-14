@@ -1,10 +1,24 @@
 export const experiences = [
 	{
+		duration: 'Nov 2025 - Present',
+		title: 'Frontend Developer',
+		company: 'Bread Cooperative',
+		website: 'https://bread.coop/',
+		location: 'Remote',
+		employmentType: 'Open Source',
+		descriptions: [
+			'Promoted from open-source contributor to maintainer of all frontend repositories.',
+			'Maintaining and improving React-based codebases',
+		],
+		techs: ['TypeScript', 'React.js', 'Next.js', 'TailwindCSS', 'Web 3' ],
+	},
+	{
 		duration: 'May 2025 - Present',
 		title: 'Senior Frontend Developer',
 		company: 'Omniretail',
 		website: 'https://omniretail.africa/',
 		location: 'Remote, Nigeria',
+		employmentType: 'Contract',
 		descriptions: [
 			'Led development of the core onboarding and company registration flow that powers 140K+ retailers and 65+ major FMCG brands across Africa.',
 			'Provided secure authentication & authorization that handles business logic.',

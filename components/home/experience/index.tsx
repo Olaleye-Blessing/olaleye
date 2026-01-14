@@ -42,6 +42,7 @@ export default function Experience() {
 										href={exp.website}
 										className='flex items-center justify-start text-primary'
 										target='_blank'
+										rel='noopener noreferrer'
 									>
 										<span>{exp.company}</span>
 										<span>
@@ -49,6 +50,11 @@ export default function Experience() {
 										</span>
 									</a>
 								</h3>
+								{exp.employmentType && (
+									<p className='text-muted-foreground text-sm mt-1 mb-2 text-green-700 font-semibold'>
+										{exp.employmentType}
+									</p>
+								)}
 								<ul>
 									{exp.descriptions.map((des) => {
 										return (
