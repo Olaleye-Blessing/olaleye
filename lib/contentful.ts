@@ -1,4 +1,4 @@
-import { IProject } from '@/app/projects/[project]/_types/project';
+import { IProject } from '@/interfaces/project';
 
 const PROJECT_GRAPHQL_FIELDS = `
   sys {
