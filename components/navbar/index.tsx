@@ -1,27 +1,37 @@
-'use client';
+"use client";
 
-import { useRef } from 'react';
-import Pages from './pages';
-import Contacts from './Contacts';
-import Hamburger from './hamburger';
-import './index.css';
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const _pages = ["projects", "experience", "articles", "throwbacks"];
 
 export default function Navbar() {
-	const toggleRef = useRef<HTMLButtonElement>(null);
-	const closeHamburger = () => {
-		const button = toggleRef.current;
-		if (!button) return;
-
-		button.classList.remove('active');
-	};
-
+	const pathname = usePathname();
 	return (
-		<nav className='flex items-center justify-between flex-wrap sticky p-4 top-0 right-0 left-0 z-50 backdrop-blur-[1.3rem]'>
-			<Hamburger btnRef={toggleRef} />
-			<div className='nav__contents'>
-				<Pages closeHamburger={closeHamburger} />
-				<Contacts />
-			</div>
+		<nav className="overflow-x-auto no-scrollbar py-6 sticky top-0 left-0 right-0 bg-transparent backdrop-blur-[1.3rem] pl-8">
+			<ul className="flex items-center justify-start gap-7">
+				{[..._pages].map((page, i) => {
+					const path = page === "projects" ? "/" : `/${page}`;
+					const active = path === pathname;
+
+					return (
+						<li key={page}>
+							<Link
+								href={path}
+								className={cn(
+									"uppercase text-xs leading-[1.375rem] font-medium transition-all",
+									active
+										? "text-white"
+										: "text-black-1 hover:text-white-1 hover:opacity-30",
+								)}
+							>
+								{page}
+							</Link>
+						</li>
+					);
+				})}
+			</ul>
 		</nav>
 	);
 }
