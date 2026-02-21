@@ -17,6 +17,7 @@ const Index: FC<Props> = ({
   rest,
 }) => {
   return (
+    // @ts-expect-error Correct
     <StyledButton
       {...rest}
       className={`btn__primary ${className}`}

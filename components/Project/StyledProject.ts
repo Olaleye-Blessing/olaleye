@@ -90,6 +90,11 @@ export const StyledProject = styled.li`
     }
 
     &__img {
+      width: 100%;
+      height: 25.8rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     &__review {

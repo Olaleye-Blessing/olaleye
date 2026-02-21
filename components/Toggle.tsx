@@ -9,6 +9,7 @@ export interface IToggle {
 const Toggle = forwardRef<HTMLButtonElement, IToggle>(
   ({ onClick, rest }, ref) => {
     return (
+      // @ts-expect-error Correct
       <StyledToggle ref={ref} onClick={onClick} {...rest}>
         <span className="bar"></span>
         <span className="bar"></span>

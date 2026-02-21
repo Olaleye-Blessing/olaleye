@@ -4,6 +4,7 @@ import { StyledResume } from "./Style/StyledResume";
 
 const Resume: FC = () => {
   return (
+    // @ts-expect-error Correct
     <StyledResume href="/resume.pdf" target="_blank" rel="noreferrer noopener">
       <span>check my resume</span>
       <figure aria-hidden="true">

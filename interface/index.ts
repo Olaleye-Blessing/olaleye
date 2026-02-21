@@ -5,7 +5,8 @@ export interface Project {
   source: string;
   live: string;
   youtubeUrl?: string;
-  image: StaticImageData;
+  // image: StaticImageData;
+  image: string;
   name: string;
 }
 

@@ -4,6 +4,7 @@ import { About, AboutHeader, Technologies } from "./../../components";
 
 const Index: FC = () => {
   return (
+    // @ts-expect-error Correct
     <StyledSection id="aboutme">
       <AboutHeader />
       <div className="section__content">

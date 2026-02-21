@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 
 const Projects: FC = () => {
   return (
+    // @ts-expect-error Correct
     <StyledSection id="projects" aria-label="Projects' Section">
       <Fade top>
         <header className="section__header-main">

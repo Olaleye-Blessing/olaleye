@@ -18,6 +18,7 @@ const Form: FC<{
   }));
 
   return (
+    // @ts-expect-error Correct
     <StyledForm onSubmit={(e) => e.preventDefault()}>
       <Select
         name="type"

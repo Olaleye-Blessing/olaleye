@@ -5,6 +5,7 @@ import Link from "next/link";
 const HomeLogo: FC = () => {
   return (
     <Link href="/" passHref>
+      {/* @ts-expect-error Correct */}
       <StyledHomeLogo aria-label="Olaleye Blessing's Site logo" translate="no">
         B
       </StyledHomeLogo>

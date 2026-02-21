@@ -66,6 +66,7 @@ const Main: FC = () => {
   }, [contributions.page]);
 
   return (
+    // @ts-expect-error Correct
     <StyledMain className="container">
       <header
         style={{

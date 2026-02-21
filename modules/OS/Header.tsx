@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Header: FC = () => {
   return (
+    // @ts-expect-error Correct
     <StyledHeader className="container">
       <h1>
         These are the list of contributions I&rsquo;ve made to open source

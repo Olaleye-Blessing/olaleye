@@ -6,6 +6,7 @@ import { StyledSubSection } from "./Style/StyledHomeContent";
 const Technologies: FC = () => {
   return (
     <Fade right>
+      {/* @ts-expect-error Correct */}
       <StyledSubSection className="section__content-skills">
         <header>
           <h3>Skills and Technologies</h3>

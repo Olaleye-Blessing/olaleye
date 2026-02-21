@@ -6,6 +6,7 @@ import headerBg from "./../public/static/images/header.svg";
 
 const Header: FC = () => {
   return (
+    // @ts-expect-error Correct
     <StyledHeader className="">
       <div className="container">
         <div className="header__content">

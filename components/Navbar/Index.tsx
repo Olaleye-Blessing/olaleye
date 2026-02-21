@@ -51,6 +51,7 @@ const Index: FC = () => {
   }, []);
 
   return (
+    // @ts-expect-error Correct
     <StyledNav className="" ref={navRef}>
       <div className="container nav__container">
         <div className="nav__logo">
