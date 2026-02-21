@@ -25,7 +25,7 @@ export const projects: Project[] = [
     source: "https://github.com/Olaleye-Blessing/oshere",
     live: "https://oshere.blessingolaleye.xyz/",
     youtubeUrl: "https://www.youtube.com/watch?v=aorIddDX8B8",
-    image: Oshere,
+    image: "/static/images/projects/oshere.webp",
   },
 
   {
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     source: "https://github.com/Olaleye-Blessing/covidtracker",
     live: "https://covidtracker-umber.vercel.app/",
     youtubeUrl: "https://www.youtube.com/watch?v=K0kYdQSalbo",
-    image: Covid,
+    image: "/static/images/projects/covid.webp",
   },
 
   {
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     source: "https://github.com/Olaleye-Blessing/cryptus",
     live: "https://cryptus-nine.vercel.app/",
     youtubeUrl: "https://www.youtube.com/watch?v=Ec8DtBIMyfE",
-    image: Crypto,
+    image: "/static/images/projects/crypto.webp",
   },
 
   {
@@ -69,6 +69,6 @@ export const projects: Project[] = [
     tech: ["Reactjs", "Styled-Components", "API", "Testing"],
     source: "https://github.com/Olaleye-Blessing/foodcheck",
     live: "https://foodcheck.vercel.app/",
-    image: FoodCheck,
+    image: "/static/images/projects/foodcheck.webp",
   },
 ];

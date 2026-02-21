@@ -29,13 +29,10 @@ const Index: FC<Project> = ({
     <StyledProject>
       <article ref={projectRef}>
         <div className="project__figures">
-          <figure className="project__img">
-            <Image
-              src={image}
-              alt={`${name}'s screenshot`}
-              layout="responsive"
-            />
-          </figure>
+          <figure
+            className="project__img"
+            style={{ backgroundImage: `url(${image})` }}
+          />
           {youtubeUrl && (
             <ProjectPreview show={showPreview} youtubeUrl={youtubeUrl} />
           )}
