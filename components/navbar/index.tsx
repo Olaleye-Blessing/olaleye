@@ -18,6 +18,7 @@ export default function Navbar() {
 					return (
 						<li key={page}>
 							<Link
+								prefetch={page === "projects" ? true : null}
 								href={path}
 								className={cn(
 									"uppercase text-xs leading-[1.375rem] font-medium transition-all",

@@ -29,7 +29,7 @@ export const experiences = [
 			"Collaborate with designers, backend teams, and cross-team frontend developers to work on different features.",
 		],
 		summary:
-			"I led the development of the core onboarding and company registration flow that powers retailers and brands across Africa.",
+			"I contribute to multiple core projects, working closely alongside the lead developer.",
 		techs: ["TypeScript", "Next.js", "Redux", "RTQ Query"],
 	},
 	{
