@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const _pages = ["projects", "experience", "articles", "throwbacks"];
+const _pages = ["experience", "projects", "articles", "throwbacks"];
 
 export default function Navbar() {
 	const pathname = usePathname();
@@ -12,7 +12,7 @@ export default function Navbar() {
 		<nav className="overflow-x-auto no-scrollbar py-6 sticky top-0 left-0 right-0 bg-transparent backdrop-blur-[1.3rem] pl-8">
 			<ul className="flex items-center justify-start gap-7">
 				{[..._pages].map((page, i) => {
-					const path = page === "projects" ? "/" : `/${page}`;
+					const path = page === "experience" ? "/" : `/${page}`;
 					const active = path === pathname;
 
 					return (
