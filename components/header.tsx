@@ -41,13 +41,12 @@ const Header = () => {
 					Olaleye
 				</h1>
 				<p className="font-light text-sm">
-					I&apos;m a{" "}
+					Frontend Developer with{" "}
 					<span className="font-bold text-black-1">
-						senior frontend developer
+						{new Date().getFullYear() - 2021} years of experience
 					</span>{" "}
-					that loves building product from start to end. Bring the UI
-					and watch magic{" "}
-					<span className="font-thin text-black-1">unfolds</span>.
+					building performant, user-focused interfaces and products
+					from idea to launch.
 				</p>
 				<ul className="flex items-center justify-center mt-6 mb-6 gap-2 flex-wrap">
 					{_socials.map((s) => (

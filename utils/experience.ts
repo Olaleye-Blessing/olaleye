@@ -29,7 +29,7 @@ export const experiences = [
 			"Collaborate with designers, backend teams, and cross-team frontend developers to work on different features.",
 		],
 		summary:
-			"I contribute to multiple core projects, working closely alongside the lead developer.",
+			"I contribute to multiple core projects, working closely alongside the lead developer(s) in each project.",
 		techs: ["TypeScript", "Next.js", "Redux", "RTQ Query"],
 	},
 	{
