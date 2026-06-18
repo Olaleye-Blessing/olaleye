@@ -9,6 +9,15 @@ export type TArticle = {
 
 export const articles: TArticle[] = [
 	{
+		title: "How to Avoid Overusing useCallback and useMemo in React",
+		summary:
+			"Wrapping everything in useCallback and useMemo doesn't automatically mean better performance. Learn how to structure your React components so memoization is rarely needed in the first place.",
+		href: "https://www.freecodecamp.org/news/how-to-avoid-overusing-usecallback-and-usememo-in-react/",
+		website: "FreeCodeCamp",
+		techs: ["Frontend", "React.js"],
+		date: "2026-06-18",
+	},
+	{
 		title: "How to Simplify Your React Components with Derived State",
 		summary:
 			// "React simplifies building user interfaces with hooks like useState for managing dynamic values. But it's common to overuse useState. This often leads to duplicated data and unnecessary complexity.\n\nIn this tutorial, you'll learn how to use derived state to improve your components. By the end, you'll know when to derive state instead of storing it, making your React code cleaner and more maintainable.",
