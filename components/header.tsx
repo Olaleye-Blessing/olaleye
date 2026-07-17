@@ -31,10 +31,9 @@ const _socials = [
 const Header = () => {
 	return (
 		<header className="flex flex-col items-center justify-center sm:flex-row sm:justify-start">
-			<figure className="w-[10.5365591049rem] h-[10.5365591049rem] rounded-full overflow-hidden flex items-center justify-center mb-[3.499375rem] sm:mb-0 sm:mr-14 sm:shrink-0 sm:grow-0">
-				{/* eslint-disable-next-line @next/next/no-img-element */}
+			{/* <figure className="w-[10.5365591049rem] h-[10.5365591049rem] rounded-full overflow-hidden flex items-center justify-center mb-[3.499375rem] sm:mb-0 sm:mr-14 sm:shrink-0 sm:grow-0">
 				<img src="/blessing.jpeg" alt="" width={400} height={400} />
-			</figure>
+			</figure> */}
 			<div className="flex flex-col items-center justify-center text-center sm:text-left sm:items-start">
 				<h1 className="font-normal text-3xl mb-5">
 					<span className="text-black-1">Hi, I&apos;m </span>Blessing{" "}
