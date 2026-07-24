@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
+		"dev": "next dev --port 3090",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
@@ -15,7 +15,7 @@
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
 		"lucide-react": "^0.390.0",
-		"next": "15.1.9",
+		"next": "15.1.11",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"react-player": "^2.16.0",
@@ -33,7 +33,7 @@
 		"typescript": "^5"
 	},
 	"engines": {
-		"node": ">=18.0.0",
-		"pnpm": ">=8.0.0"
-	}
+		"node": "22.x"
+	},
+	"packageManager": "pnpm@11.1.3"
 }

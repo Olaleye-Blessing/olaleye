@@ -1,7 +1,7 @@
-packages:
-    - "."
-
-minimumReleaseAge: 864000 # 10 days
-blockExoticSubdeps: true
-strictDepBuilds: true
+minimumReleaseAge: 14400 # 10 days
 trustPolicy: no-downgrade
+trustPolicyIgnoreAfter: 43200 # 30 days
+
+allowBuilds:
+  sharp: true
+  unrs-resolver: true

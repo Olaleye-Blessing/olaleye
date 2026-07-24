@@ -1,9 +1,15 @@
 import { cn } from "@/lib/utils";
-import { FileIcon, GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
+import {
+	CloudDownload,
+	FileIcon,
+	GithubIcon,
+	LinkedinIcon,
+	MailIcon,
+} from "lucide-react";
 
 const _socials = [
 	{
-		link: "https://docs.google.com/document/d/1u8sv0wNbkGsq2eGa3yHVyOvfn5x294Xsn10QhtdxAOg/edit",
+		link: "https://docs.google.com/document/d/19T6VqzeZRWtSu9V9oUIXGVP7MPJUKgTyKyl0AvAzzBo/preview",
 		label: "Resume",
 		icon: FileIcon,
 		className: "hover:text-[#D32F2F]",
@@ -25,6 +31,12 @@ const _socials = [
 		label: "Github",
 		icon: GithubIcon,
 		className: "hover:text-[#4078c0]",
+	},
+	{
+		link: "https://docs.google.com/document/d/19T6VqzeZRWtSu9V9oUIXGVP7MPJUKgTyKyl0AvAzzBo/export?format=pdf",
+		label: "Download Resume",
+		icon: CloudDownload,
+		className: "hover:text-[#D32F2F]",
 	},
 ];
 

@@ -5,6 +5,7 @@
 @layer base {
 	html {
 		@apply scroll-smooth;
+		interpolate-size: allow-keywords;
 	}
 
 	body {
@@ -35,6 +36,22 @@
 	a {
 		@apply transition-colors;
 	}
+
+	.animated-details::details-content {
+		opacity: 0;
+		block-size: 0;
+		overflow: hidden;
+		/* Include content-visibility with 'allow-discrete' to prevent instant popping */
+		transition:
+			block-size 0.3s ease,
+			opacity 0.3s ease,
+			content-visibility 0.3s ease allow-discrete;
+	}
+
+	.animated-details[open]::details-content {
+		opacity: 1;
+		block-size: auto;
+	}
 }
 
 @layer components {
@@ -42,21 +59,21 @@
 		@apply bg-black-2 p-8 shadow-[0px_0.125rem_0.25rem_0.125rem_#0000001A];
 	}
 
-  .cardboard-para {
-    @apply text-sm text-black-1 leading-[1.25rem];
-  }
+	.cardboard-para {
+		@apply text-sm text-[#a3a3a3] leading-[1.25rem];
+	}
 
-  .cardboard-link-head {
-    @apply text-base font-normal;
-  }
-  
+	.cardboard-link-head {
+		@apply text-base font-normal;
+	}
+
 	.cardboard-link {
-    @apply flex items-center justify-start gap-3.5 hover:underline hover:opacity-70 max-w-max transition-all scale-100 hover:scale-[1.02];
-  }
+		@apply flex items-center justify-start gap-3.5 hover:underline hover:opacity-70 max-w-max transition-all scale-100 hover:scale-[1.02];
+	}
 
 	.cardboard-link-arrow {
-    @apply size-3.5;
-  }
+		@apply size-3.5;
+	}
 }
 
 @layer utilities {
